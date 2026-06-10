@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sarah Safwan — Digital Archive</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --cream:#F7F4E7;
+      --ink:#232323;
+      --lav:#B2ABB8;
+      --lav-soft:rgba(178,171,184,.32);
+      --lav-light:rgba(178,171,184,.18);
+      --muted:rgba(35,35,35,.62);
+      --line:rgba(35,35,35,.16);
+      --lav-line:rgba(178,171,184,.7);
+      --white:rgba(255,255,255,.38);
+    }
+
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+
+    body{
+     background:
+radial-gradient(circle at 8% 12%, rgba(178,171,184,.12), transparent 28%),
+radial-gradient(circle at 88% 22%, rgba(178,171,184,.08), transparent 24%),
+var(--cream);
+      color:var(--ink);
+      font-family:Inter,sans-serif;
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    a{text-decoration:none;color:inherit}
+    ::selection{background:var(--lav);color:var(--ink)}
+
+    .grain{
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      opacity:.15;
+      z-index:999;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 250 250' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:30;
+      padding:22px 5vw;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(247,244,231,.78);
+      backdrop-filter:blur(18px);
+      border-bottom:1px solid var(--lav-line);
+    }
+
+    .brand{
+      font-family:"Cormorant Garamond",serif;
+      font-size:27px;
+      letter-spacing:.03em;
+    }
+
+    .brand::after{
+      content:"";
+      display:inline-block;
+      width:9px;
+      height:9px;
+      background:var(--lav);
+      border-radius:50%;
+      margin-left:10px;
+    }
+
+    .nav-links{
+      display:flex;
+      gap:28px;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--muted);
+    }
+
+    .nav-links a{
+      position:relative;
+    }
+
+    .nav-links a::after{
+      content:"";
+      position:absolute;
+      left:0;
+      bottom:-6px;
+      width:0;
+      height:1px;
+      background:var(--lav);
+      transition:.3s ease;
+    }
+
+    .nav-links a:hover::after{width:100%}
+    .nav-links a:hover{color:var(--ink)}
+
+    section{padding:120px 5vw}
+
+    .eyebrow{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      color:var(--lav);
+      margin-bottom:28px;
+      font-weight:600;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:60px;
+      align-items:end;
+      padding-top:160px;
+      border-bottom:1px solid var(--lav-line);
+      position:relative;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      top:18%;
+      right:8%;
+      width:270px;
+      height:270px;
+      background:var(--lav-soft);
+      border-radius:50%;
+      filter:blur(8px);
+      z-index:-1;
+    }
+
+    .hero::after{
+      content:"";
+      position:absolute;
+      bottom:12%;
+      left:5%;
+      width:180px;
+      height:12px;
+      background:var(--lav);
+      z-index:-1;
+    }
+
+    h1{
+      font-family:"Cormorant Garamond",serif;
+      font-weight:500;
+      font-size:clamp(74px,13vw,190px);
+      line-height:.78;
+      letter-spacing:-.06em;
+    }
+
+    h1 span{
+      color:var(--lav);
+      font-style:italic;
+    }
+
+    .hero-statement{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(31px,4.7vw,78px);
+      line-height:.95;
+      max-width:760px;
+      margin-top:42px;
+    }
+
+    .hero-statement em{
+      color:var(--lav);
+      font-style:normal;
+    }
+
+    .hero-side{
+      border-left:1px solid var(--lav);
+      padding-left:36px;
+      margin-bottom:16px;
+    }
+
+    .hero-side p{
+      font-size:18px;
+      color:var(--muted);
+      max-width:430px;
+      margin-bottom:30px;
+    }
+
+    .signature{
+      font-family:"Cormorant Garamond",serif;
+      font-size:46px;
+      color:var(--lav);
+      font-style:italic;
+    }
+
+    .hero-tags{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:26px;
+    }
+
+    .hero-tags span{
+      border:1px solid var(--lav);
+      background:var(--lav-light);
+      padding:8px 13px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--ink);
+    }
+
+.marquee{
+  border-bottom:1px solid var(--lav-line);
+  overflow:hidden;
+  white-space:nowrap;
+  padding:20px 0;
+  font-family:"Cormorant Garamond",serif;
+  font-size:34px;
+  color:var(--ink);
+  background:var(--lav-light);
+}
+
+.marquee-track{
+  display:flex;
+  width:max-content;
+  animation:marquee 25s linear infinite;
+}
+
+.marquee span{
+  flex-shrink:0;
+  padding-right:60px;
+}
+
+@keyframes marquee{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-33.333%);
+  }
+}
+
+    .profile{
+      border-bottom:1px solid var(--lav-line);
+      background:linear-gradient(180deg, rgba(178,171,184,.12), transparent 70%);
+    }
+
+    .profile-layout{
+      display:grid;
+      grid-template-columns:.48fr 1fr;
+      gap:70px;
+      align-items:start;
+    }
+
+    .section-title{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(44px,7vw,104px);
+      line-height:.88;
+      font-weight:500;
+      letter-spacing:-.04em;
+    }
+
+    .section-title em{
+      color:var(--lav);
+      font-style:italic;
+    }
+.profile-photo-circle{
+  margin-top:34px;
+  width:330px;
+  height:330px;
+  border-radius:50%;
+  padding:14px;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(255,255,255,.7), transparent 35%),
+    var(--lav-soft);
+  border:1px solid var(--lav-line);
+  box-shadow:
+    18px 18px 0 rgba(178,171,184,.18),
+    0 24px 60px rgba(35,35,35,.08);
+}
+
+.profile-photo-circle img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+  border-radius:50%;
+  display:block;
+  filter:saturate(.92) contrast(.98);
+}
+    .profile-panel{
+      border:1px solid var(--lav);
+      background:rgba(178,171,184,.18);
+      padding:38px;
+      box-shadow:18px 18px 0 rgba(178,171,184,.22);
+    }
+
+    .profile-panel p{
+      font-size:20px;
+      color:var(--muted);
+      max-width:760px;
+    }
+
+    .profile-grid{
+      margin-top:56px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border-top:1px solid var(--lav-line);
+      border-left:1px solid var(--lav-line);
+    }
+
+    .profile-note{
+      padding:28px;
+      min-height:220px;
+      border-right:1px solid var(--lav-line);
+      border-bottom:1px solid var(--lav-line);
+      background:rgba(255,255,255,.2);
+      transition:.35s ease;
+    }
+
+    .profile-note:hover{
+      background:rgba(178,171,184,.22);
+    }
+
+    .profile-note span{
+      display:block;
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:var(--lav);
+      margin-bottom:22px;
+      font-weight:600;
+    }
+
+    .profile-note h3{
+      font-family:"Cormorant Garamond",serif;
+      font-size:36px;
+      line-height:1;
+      font-weight:500;
+      margin-bottom:14px;
+    }
+
+    .profile-note p{
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .archive-grid{
+      display:grid;
+      grid-template-columns:repeat(12,1fr);
+      gap:18px;
+      margin-top:60px;
+    }
+
+    .archive-card{
+      min-height:360px;
+      border:1px solid var(--lav-line);
+      padding:30px;
+      background:rgba(255,255,255,.28);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      transition:.45s ease;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .archive-card::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:9px;
+      background:var(--lav);
+      transform:scaleX(.28);
+      transform-origin:left;
+      transition:.45s ease;
+    }
+
+    .archive-card:hover{
+      transform:translateY(-8px);
+      background:rgba(178,171,184,.22);
+    }
+
+    .archive-card:hover::before{
+      transform:scaleX(1);
+    }
+
+    .wide{grid-column:span 7}
+    .small{grid-column:span 5}
+    .half{grid-column:span 6}
+
+    .archive-card h3{
+      font-family:"Cormorant Garamond",serif;
+      font-size:54px;
+      line-height:.9;
+      font-weight:500;
+      letter-spacing:-.03em;
+    }
+
+    .archive-card p{
+      color:var(--muted);
+      max-width:520px;
+      margin-top:20px;
+    }
+
+    .number{
+      font-family:"Cormorant Garamond",serif;
+      color:var(--lav);
+      font-size:34px;
+    }
+
+    .timeline{
+      border-top:1px solid var(--lav-line);
+      margin-top:60px;
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns:.35fr .65fr;
+      gap:50px;
+      padding:42px 0;
+      border-bottom:1px solid var(--lav-line);
+      transition:.3s ease;
+    }
+
+    .row:hover{
+      background:rgba(178,171,184,.12);
+      padding-left:18px;
+    }
+
+    .row h3{
+      font-family:"Cormorant Garamond",serif;
+      font-size:44px;
+      font-weight:500;
+      line-height:1;
+    }
+
+    .role{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      color:var(--lav);
+      margin-bottom:18px;
+      font-weight:600;
+    }
+
+    .row ul{
+      list-style:none;
+      color:var(--muted);
+      display:grid;
+      gap:8px;
+    }
+
+    .row li:before{
+      content:"— ";
+      color:var(--lav);
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:26px;
+      margin-top:60px;
+    }
+
+    .skill{
+      border-top:3px solid var(--lav);
+      background:rgba(255,255,255,.22);
+      padding:30px;
+      min-height:300px;
+    }
+
+    .skill h3{
+      font-family:"Cormorant Garamond",serif;
+      font-size:42px;
+      margin-bottom:20px;
+    }
+
+    .skill p{
+      color:var(--muted);
+      margin-bottom:10px;
+    }
+
+    .beliefs{
+      background:var(--ink);
+      color:var(--cream);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .beliefs::before{
+      content:"";
+      position:absolute;
+      top:-120px;
+      right:-80px;
+      width:360px;
+      height:360px;
+      background:var(--lav);
+      border-radius:50%;
+      opacity:.55;
+    }
+
+    .beliefs .eyebrow{color:var(--lav)}
+
+    .belief{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(34px,6vw,92px);
+      line-height:.9;
+      padding:34px 0;
+      border-bottom:1px solid rgba(178,171,184,.45);
+      position:relative;
+      z-index:1;
+    }
+
+    .belief::first-letter{
+      color:var(--lav);
+    }
+
+    .certs{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:14px;
+      margin-top:60px;
+    }
+
+    .cert{
+      min-height:145px;
+      border:1px solid var(--lav-line);
+      padding:22px;
+      display:flex;
+      align-items:flex-end;
+      font-family:"Cormorant Garamond",serif;
+      font-size:25px;
+      line-height:1;
+      background:rgba(255,255,255,.24);
+      transition:.35s ease;
+    }
+
+    .cert:hover{
+      background:var(--lav);
+      transform:translateY(-5px);
+    }
+
+    .contact{
+      position:relative;
+      overflow:hidden;
+      border-top:1px solid var(--lav-line);
+      border-bottom:1px solid var(--lav-line);
+      background:
+        radial-gradient(circle at 18% 20%, rgba(178,171,184,.34), transparent 30%),
+        linear-gradient(135deg, rgba(255,255,255,.3), rgba(178,171,184,.13)),
+        var(--cream);
+    }
+
+    .contact::before{
+      content:"";
+      position:absolute;
+      top:0;
+      left:5vw;
+      width:1px;
+      height:100%;
+      background:var(--lav-line);
+    }
+
+    .contact::after{
+      content:"CONNECT";
+      position:absolute;
+      right:-42px;
+      bottom:24px;
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(70px,13vw,190px);
+      line-height:1;
+      color:rgba(178,171,184,.2);
+      letter-spacing:-.06em;
+      pointer-events:none;
+    }
+
+    .contact-layout{
+      position:relative;
+      z-index:1;
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:80px;
+      align-items:stretch;
+    }
+
+    .contact-copy{
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height:520px;
+      padding-left:36px;
+    }
+
+    .contact-copy h2{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(58px,8vw,128px);
+      line-height:.82;
+      font-weight:500;
+      letter-spacing:-.06em;
+      max-width:780px;
+    }
+
+    .contact-copy h2 em{
+      color:var(--lav);
+      font-style:italic;
+    }
+
+    .contact-copy p{
+      color:var(--muted);
+      max-width:520px;
+      font-size:18px;
+      margin-top:30px;
+    }
+
+    .contact-signoff{
+      margin-top:44px;
+      font-family:"Cormorant Garamond",serif;
+      color:var(--lav);
+      font-size:58px;
+      font-style:italic;
+      line-height:1;
+    }
+
+    .contact-card{
+      border:1px solid var(--lav);
+      background:rgba(255,255,255,.28);
+      backdrop-filter:blur(14px);
+      padding:38px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      box-shadow:22px 22px 0 rgba(178,171,184,.22);
+      min-height:520px;
+    }
+
+    .contact-card-top{
+      display:flex;
+      justify-content:space-between;
+      gap:24px;
+      padding-bottom:28px;
+      border-bottom:1px solid var(--lav-line);
+    }
+
+    .contact-label{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.18em;
+      color:var(--lav);
+      font-weight:600;
+    }
+
+    .contact-note{
+      color:var(--muted);
+      max-width:360px;
+      font-size:15px;
+    }
+
+    .contact-links{
+      display:grid;
+      border-top:1px solid var(--lav-line);
+      margin-top:30px;
+    }
+
+    .contact-link{
+      display:grid;
+      grid-template-columns:120px 1fr auto;
+      gap:20px;
+      align-items:center;
+      padding:24px 0;
+      border-bottom:1px solid var(--lav-line);
+      transition:.35s ease;
+    }
+
+    .contact-link:hover{
+      padding-left:18px;
+      background:rgba(178,171,184,.16);
+    }
+
+    .contact-link span:first-child{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.17em;
+      color:var(--lav);
+      font-weight:600;
+    }
+
+    .contact-link strong{
+      font-family:"Cormorant Garamond",serif;
+      font-size:34px;
+      font-weight:500;
+      line-height:1;
+    }
+
+    .contact-link span:last-child{
+      font-size:22px;
+      color:var(--lav);
+    }
+
+    .availability{
+      display:flex;
+      justify-content:space-between;
+      gap:18px;
+      align-items:center;
+      margin-top:34px;
+      padding:18px;
+      border:1px solid var(--lav-line);
+      background:rgba(178,171,184,.14);
+    }
+
+    .availability p{
+      color:var(--muted);
+      font-size:14px;
+      max-width:330px;
+    }
+
+    .availability strong{
+      font-family:"Cormorant Garamond",serif;
+      font-size:28px;
+      font-weight:500;
+      color:var(--ink);
+    }
+
+    footer{
+      padding:28px 5vw;
+      border-top:1px solid var(--lav-line);
+      display:flex;
+      justify-content:space-between;
+      color:var(--muted);
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      background:rgba(178,171,184,.14);
+    }
+
+    .reveal{
+      opacity:0;
+      transform:translateY(30px);
+      transition:.8s ease;
+    }
+
+    .reveal.active{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media(max-width:900px){
+      nav{padding:20px 6vw}
+      .nav-links{display:none}
+      section{padding:90px 6vw}
+      .profile-photo-circle{
+  width:260px;
+  height:260px;
+}
+
+      .hero,
+      .profile-layout,
+      .row,
+      .skills,
+      .contact-layout{
+        grid-template-columns:1fr;
+      }
+
+      .hero-side{
+        border-left:0;
+        padding-left:0;
+        border-top:1px solid var(--lav);
+        padding-top:30px;
+      }
+
+      .profile-grid{
+        grid-template-columns:1fr;
+      }
+
+      .profile-panel{
+        box-shadow:10px 10px 0 rgba(178,171,184,.22);
+      }
+
+      .wide,.small,.half{
+        grid-column:span 12;
+      }
+
+      .certs{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .contact::before{
+        left:6vw;
+      }
+
+      .contact-copy{
+        min-height:auto;
+        padding-left:24px;
+      }
+
+      .contact-card{
+        min-height:auto;
+        box-shadow:12px 12px 0 rgba(178,171,184,.22);
+      }
+
+      .contact-card-top{
+        flex-direction:column;
+      }
+
+      footer{
+        flex-direction:column;
+        gap:10px;
+      }
+    }
+
+    @media(max-width:520px){
+      h1{font-size:76px}
+      .certs{grid-template-columns:1fr}
+      .archive-card{min-height:300px}
+      .profile-panel{padding:26px}
+
+      .contact-card{
+        padding:26px;
+      }
+
+      .contact-link{
+        grid-template-columns:1fr;
+        gap:8px;
+      }
+
+      .contact-link strong{
+        font-size:30px;
+      }
+
+      .availability{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grain"></div>
+
+  <nav>
+    <div class="brand">Sarah Safwan</div>
+    <div class="nav-links">
+      <a href="#profile">Profile</a>
+      <a href="#archive">Archive</a>
+      <a href="#experience">Experience</a>
+      <a href="#beliefs">Beliefs</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <div class="eyebrow">Marketing / Storytelling / Creative Direction</div>
+      <h1>SARAH<br><span>SAFWAN</span></h1>
+      <div class="hero-statement">
+        I turn ideas into <em>stories</em>, and stories into digital experiences.
+      </div>
+    </div>
+
+    <div class="hero-side">
+     <p>
+  I build thoughtful digital work at the intersection of marketing, storytelling,
+  and personal expression; turning ideas into content, brands, and online spaces
+  that feel intentional.
+</p>
+
+      <div class="hero-tags">
+        <span>Marketing</span>
+        <span>Writing</span>
+        <span>Podcasting</span>
+        <span>Research</span>
+      </div>
+    </div>
+  </section>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>
+      becoming • learning • creating • reflecting •
+    </span>
+
+    <span>
+      becoming • learning • creating • reflecting •
+    </span>
+
+    <span>
+      becoming • learning • creating • reflecting •
+    </span>
+  </div>
+</div>
+
+  <section id="profile" class="profile reveal">
+    <div class="profile-layout">
+      <div>
+        <div class="eyebrow">Profile</div>
+        <h2 class="section-title">A creative mind with a <em>strategic</em> lens.</h2>
+        <div class="profile-photo-circle">
+<img src="images/sarah.png" alt="Sarah Safwan">
+</div>
+      </div>
+      <div>
+        <div class="profile-panel">
+          <p>
+           I'm interested in people, stories, and the ideas that move between them.
+
+My work spans marketing, writing, podcasting, and digital media, but at its core, it is driven by a simple question: how do we communicate in ways that feel meaningful? Through thoughtful content and creative strategy, I build digital experiences designed to inform, connect, and leave a lasting impression.
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <div class="profile-note">
+            <span>01 / Foundation</span>
+            <h3>Business Administration</h3>
+            <p>
+              A background that shapes how Sarah thinks about brands, people,
+              communication, strategy, and the business side of creative work.
+            </p>
+          </div>
+
+          <div class="profile-note">
+            <span>02 / Practice</span>
+            <h3>Marketing</h3>
+            <p>
+              A growing professional focus on content marketing, social media strategy,
+              SEO, digital advertising, and brand storytelling.
+            </p>
+          </div>
+
+          <div class="profile-note">
+            <span>03 / Voice</span>
+            <h3>Creation</h3>
+            <p>
+              An ongoing practice in understanding people, communicating ideas, and creating content with purpose. From social media and campaigns to personal brands and digital storytelling.
+            </p>
+          </div>
+
+          <div class="profile-note">
+            <span>04 / Method</span>
+            <h3>Research</h3>
+            <p>
+              Psychology research experience that supports literature reviews,
+              information synthesis, curiosity, and human understanding.
+            </p>
+          </div>
+
+          <div class="profile-note">
+            <span>05 / Direction</span>
+            <h3>Storytelling</h3>
+            <p>
+              A belief that the strongest digital work is not only seen, but felt,
+              remembered, and connected to a real human insight.
+            </p>
+          </div>
+
+          <div class="profile-note">
+            <span>06 / Identity</span>
+            <h3>Personal Brand</h3>
+            <p>
+              A portfolio of work that reflects strategy, elegance, clarity, creativity,
+              and a distinct editorial point of view.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="archive" class="reveal">
+    <div class="eyebrow">The Archive</div>
+    <h2 class="section-title">Selected worlds, projects, and <em>experiments</em>.</h2>
+
+    <div class="archive-grid">
+      <div class="archive-card wide">
+        <div class="number">01</div>
+        <div>
+          <h3>The Sae Talk</h3>
+          <p>
+           A space for conversations about growth, identity, creativity, gratitude, and the lessons that quietly shape who we become. Part podcast, part personal exploration.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-card small">
+        <div class="number">02</div>
+        <div>
+          <h3>Writing</h3>
+          <p>
+            A collection of articles, reflections, observations, and unfinished thoughts. Writing has always been my way of understanding the world, and sometimes myself.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-card half">
+        <div class="number">03</div>
+        <div>
+          <h3>Content Strategy</h3>
+          <p>
+            Social content, personal branding, campaign concepts, editorial calendars,
+            audience development, and brand storytelling.
+          </p>
+        </div>
+      </div>
+
+      <div class="archive-card half">
+        <div class="number">04</div>
+        <div>
+          <h3>Things I've Built</h3>
+          <p>
+            Podcasts, platforms, websites, content, communities, and the occasional idea that refused to stay on paper.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <div class="eyebrow">Experience</div>
+    <h2 class="section-title">A timeline of <em>becoming</em>.</h2>
+
+    <div class="timeline">
+      <div class="row">
+        <div>
+          <h3>The Sae Talk</h3>
+          <div class="role">Creator & Host</div>
+        </div>
+
+        <ul> <li>Host and producer of a podcast exploring growth, identity, creativity, and modern life.</li> <li>Responsible for concept development, scripting, recording, editing, and publishing.</li> <li>Building meaningful conversations through audio storytelling.</li> </ul>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Sae Writes</h3>
+          <div class="role">Writer & Creator</div>
+        </div>
+
+     <ul> <li>A personal writing platform dedicated to essays, reflections, and long-form storytelling.</li> <li>Exploring ideas through writing and documenting lessons learned along the way.</li> <li>Using words as a tool for reflection, creativity, and connection.</li> </ul>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Independent Creator</h3>
+          <div class="role">Content & Personal Branding</div>
+        </div>
+
+        <ul> <li>Creating content across digital marketing, social media, personal branding, and storytelling.</li> <li>Developing strategic and creative projects designed to inform, connect, and engage.</li> <li>Continuously learning and building at the intersection of marketing and creativity.</li> </ul>
+      </div>
+
+        <div class="row">
+        <div>
+          <h3>Thy Academia</h3>
+          <div class="role">Founder & Content Creator</div>
+        </div>
+
+      <ul> <li>Built an educational and personal development platform focused on productivity and self-growth.</li> <li>Created written content and resources for students and lifelong learners.</li> <li>Developed a consistent creative voice while growing an engaged online community.</li> </ul>
+      </div>
+
+      <div class="row">
+        <div>
+          <h3>Research Volunteer</h3>
+          <div class="role">Psychology Research</div>
+        </div>
+
+      <ul> <li>Contributed to psychology research projects through literature reviews and research support.</li> <li>Developed skills in information synthesis, critical thinking, and academic research.</li> <li>Gained valuable insights into human behavior and communication.</li> </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="eyebrow">Skills</div>
+    <h2 class="section-title">Strategy, creativity, and <em>clarity</em>.</h2>
+
+    <div class="skills">
+      <div class="skill">
+        <h3>Marketing</h3>
+        <p>Content Marketing</p>
+        <p>Social Media Marketing</p>
+        <p>Digital Advertising</p>
+        <p>SEO</p>
+        <p>Email Marketing</p>
+      </div>
+
+      <div class="skill">
+        <h3>Creative</h3>
+        <p>Copywriting</p>
+        <p>Storytelling</p>
+        <p>Podcast Production</p>
+      </div>
+
+      <div class="skill">
+        <h3>Strategy</h3>
+        <p>Research</p>
+        <p>Audience Development</p>
+        <p>Brand Building</p>
+        <p>Content Strategy</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beliefs" class="beliefs reveal">
+<div class="belief">There is beauty in paying attention.</div>
+<div class="belief">Growth rarely looks the way you expect it to.</div>
+<div class="belief">The most meaningful work starts with curiosity.</div>
+<div class="belief">People connect with honesty more than perfection.</div>
+<div class="belief">A good question can change everything.</div>
+  </section>
+
+  <section class="reveal">
+    <div class="eyebrow">Certifications</div>
+    <h2 class="section-title">Proof of deliberate <em>learning</em>.</h2>
+
+    <div class="certs">
+      <div class="cert">Google Fundamentals of Digital Marketing</div>
+      <div class="cert">HubSpot SEO</div>
+      <div class="cert">Social Media Marketing</div>
+      <div class="cert">Digital Advertising</div>
+      <div class="cert">Email Marketing</div>
+      <div class="cert">Inbound Marketing</div>
+      <div class="cert">Content Marketing</div>
+      <div class="cert">EF SET C2 English</div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact reveal">
+    <div class="contact-layout">
+      <div class="contact-copy">
+        <div>
+          <div class="eyebrow">Contact</div>
+        <h2>The conversation continues here.</h2>
+<p>
+For collaborations, opportunities, or thoughtful conversations,
+you can find me below.
+</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div>
+          <div class="contact-card-top">
+            <div class="contact-label">Open to</div>
+            <p class="contact-note">
+              Digital marketing projects, content strategy, social media work,
+              storytelling-led campaigns, podcast collaborations, and creative direction.
+            </p>
+          </div>
+
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:sarahsaafwan@gmail.com">
+              <span>Email</span>
+              <strong>sarahsaafwan@gmail.com</strong>
+              <span>↗</span>
+            </a>
+
+        <a class="contact-link" href="Marketing Resume.pdf" target="_blank">
+  <span>Resume</span>
+  <strong>Download CV</strong>
+  <span>↗</span>
+</a>
+
+            <a class="contact-link" href="https://www.instagram.com/sarahsaafwan" target="_blank">
+              <span>Instagram</span>
+              <strong>@sarahsaafwan</strong>
+              <span>↗</span>
+            </a>
+
+            <a class="contact-link" href="https://www.linkedin.com/in/sarahsafwan/" target="_blank">
+              <span>LinkedIn</span>
+              <strong>Sarah Safwan</strong>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+       <div class="availability">
+  <strong>Based in Egypt.</strong>
+  <p>
+    Available for freelance projects, collaborations, and creative opportunities.
+  </p>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© Sarah Safwan</span>
+    <span>Digital Archive / Portfolio / Creative Studio</span>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add("active");
+        }
+      });
+    },{threshold:.12});
+
+    reveals.forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
