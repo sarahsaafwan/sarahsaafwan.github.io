@@ -138,17 +138,6 @@ var(--cream);
       z-index:-1;
     }
 
-    .hero::after{
-      content:"";
-      position:absolute;
-      bottom:12%;
-      left:5%;
-      width:180px;
-      height:12px;
-      background:var(--lav);
-      z-index:-1;
-    }
-
     h1{
       font-family:"Cormorant Garamond",serif;
       font-weight:500;
@@ -467,12 +456,20 @@ var(--cream);
       margin-top:60px;
     }
 
-    .skill{
-      border-top:3px solid var(--lav);
-      background:rgba(255,255,255,.22);
-      padding:30px;
-      min-height:300px;
-    }
+  .skill{
+  border:1px solid var(--lav-line);
+  background:rgba(178,171,184,.12);
+  padding:30px;
+  min-height:300px;
+
+  backdrop-filter:blur(8px);
+
+  transition:.35s ease;
+}
+.skill:hover{
+  background:rgba(178,171,184,.22);
+  transform:translateY(-4px);
+}
 
     .skill h3{
       font-family:"Cormorant Garamond",serif;
