@@ -1058,48 +1058,78 @@ var(--cream);
     }
 
     @media(max-width:900px){
-      nav{padding:18px 6vw}
-      .nav-links{display:none}
-      section{padding:82px 6vw}
 
-      .hero{
-        min-height:auto;
-        padding-top:130px;
-        padding-bottom:72px;
-        align-items:start;
-        gap:38px;
-      }
-.timeline{
-  margin-top:60px;
-  border-top:1px solid var(--lav-line);
+  nav{padding:18px 6vw}
+  .nav-links{display:none}
+  section{padding:82px 6vw}
+
+  .hero{
+    min-height:auto;
+    padding-top:130px;
+    padding-bottom:72px;
+
+    padding-left:6vw;
+    padding-right:6vw;
+
+    align-items:start;
+    gap:38px;
+
+    overflow:hidden;
+  }
+
+  .hero-main{
+    padding-left:0;
+  }
+
+  .hero-statement{
+    font-size:38px;
+    max-width:100%;
+  }
+
+  .hero-side{
+    width:100%;
+    overflow:hidden;
+  }
+
+  .hero-side p{
+    max-width:100%;
+  }
+
+  .hero-tags{
+    max-width:100%;
+  }
+
+  .timeline{
+    margin-top:60px;
+    border-top:1px solid var(--lav-line);
+  }
+
+  .row{
+    grid-template-columns:1fr;
+    gap:18px;
+    padding:34px 0;
+  }
+
+  .row:hover{
+    padding-left:0;
+  }
+
+  .row h3{
+    font-size:40px;
+  }
+
+  .role{
+    margin-top:10px;
+  }
+
+  .row ul{
+    list-style:none;
+    color:var(--muted);
+    display:grid;
+    gap:10px;
+    padding-top:8px;
+  }
 }
-
-.row{
-  grid-template-columns:1fr;
-  gap:18px;
-  padding:34px 0;
-}
-
-.row:hover{
-  padding-left:0;
-}
-
-.row h3{
-  font-size:40px;
-}
-
-.role{
-  margin-top:10px;
-}
-
-.row ul{
-  list-style:none;
-  color:var(--muted);
-  display:grid;
-  gap:10px;
-  padding-top:8px;
-}
-
 .row li{
   font-size:16px;
   line-height:1.7;
@@ -1288,7 +1318,6 @@ var(--cream);
         flex-direction:column;
         gap:10px;
       }
-    }
 
     @media(max-width:520px){
       .journey-page{
@@ -1365,22 +1394,20 @@ var(--cream);
         margin-bottom:22px;
       }
 
-      h1{
-        font-size:64px;
-        line-height:.82;
-      }
+    h1{
+  font-size:62px;
+  line-height:.82;
+}
+
+.hero-statement{
+  font-size:34px;
+  line-height:1.02;
+}
 
       .hero{
         padding-top:118px;
         padding-bottom:64px;
       }
-
-      .hero-statement{
-        font-size:38px;
-        line-height:1;
-        margin-top:30px;
-      }
-
       .section-title{
         font-size:46px;
         line-height:.92;
