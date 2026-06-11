@@ -257,27 +257,21 @@ var(--cream);
     }
 .profile-photo-circle{
   margin-top:34px;
-  width:330px;
-  height:330px;
-  border-radius:50%;
-  padding:14px;
-  background:
-    radial-gradient(circle at 35% 25%, rgba(255,255,255,.7), transparent 35%),
-    var(--lav-soft);
+  width:100%;
+  max-width:420px;
+  aspect-ratio:4/5;
+  overflow:hidden;
+  border-radius:24px;
   border:1px solid var(--lav-line);
-  box-shadow:
-    18px 18px 0 rgba(178,171,184,.18),
-    0 24px 60px rgba(35,35,35,.08);
+  box-shadow:18px 18px 0 rgba(178,171,184,.18);
 }
 
 .profile-photo-circle img{
   width:100%;
   height:100%;
   object-fit:cover;
-  object-position:center top;
-  border-radius:50%;
+  object-position:center center;
   display:block;
-  filter:saturate(.92) contrast(.98);
 }
     .profile-panel{
       border:1px solid var(--lav);
@@ -402,52 +396,137 @@ var(--cream);
       font-size:34px;
     }
 
-    .timeline{
-      border-top:1px solid var(--lav-line);
-      margin-top:60px;
-    }
+.journey-magazine{
+  margin-top:70px;
+  border:1px solid var(--lav-line);
+  background:
+    linear-gradient(135deg, rgba(255,255,255,.28), rgba(178,171,184,.12)),
+    var(--cream);
+  box-shadow:22px 22px 0 rgba(178,171,184,.14);
+  position:relative;
+  overflow:hidden;
+}
 
-    .row{
-      display:grid;
-      grid-template-columns:.35fr .65fr;
-      gap:50px;
-      padding:42px 0;
-      border-bottom:1px solid var(--lav-line);
-      transition:.3s ease;
-    }
+.journey-magazine::before{
+  content:"";
+  position:absolute;
+  inset:24px;
+  border:1px solid rgba(178,171,184,.32);
+  pointer-events:none;
+}
 
-    .row:hover{
-      background:rgba(178,171,184,.12);
-      padding-left:18px;
-    }
+.journey-page{
+  display:none;
+  min-height:520px;
+  grid-template-columns:.38fr .62fr;
+  gap:60px;
+  padding:58px;
+  position:relative;
+}
 
-    .row h3{
-      font-family:"Cormorant Garamond",serif;
-      font-size:44px;
-      font-weight:500;
-      line-height:1;
-    }
+.journey-page.active{
+  display:grid;
+}
 
-    .role{
-      font-size:11px;
-      text-transform:uppercase;
-      letter-spacing:.16em;
-      color:var(--lav);
-      margin-bottom:18px;
-      font-weight:600;
-    }
+.journey-number{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(92px,12vw,170px);
+  line-height:.75;
+  color:rgba(178,171,184,.58);
+  letter-spacing:-.07em;
+}
 
-    .row ul{
-      list-style:none;
-      color:var(--muted);
-      display:grid;
-      gap:8px;
-    }
+.journey-label{
+  margin-top:28px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:var(--lav);
+  font-weight:600;
+}
 
-    .row li:before{
-      content:"— ";
-      color:var(--lav);
-    }
+.journey-content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.journey-content h3{
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(54px,7vw,92px);
+  font-weight:500;
+  line-height:.86;
+  letter-spacing:-.05em;
+  margin-bottom:18px;
+}
+
+.role{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  color:var(--lav);
+  margin-bottom:30px;
+  font-weight:600;
+}
+
+.journey-content ul{
+  list-style:none;
+  color:var(--muted);
+  display:grid;
+  gap:12px;
+  max-width:620px;
+}
+
+.journey-content li{
+  font-size:17px;
+  line-height:1.75;
+}
+
+.journey-content li:before{
+  content:"— ";
+  color:var(--lav);
+}
+
+.journey-controls{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  padding:26px 58px;
+  border-top:1px solid var(--lav-line);
+  background:rgba(178,171,184,.1);
+  position:relative;
+  z-index:2;
+}
+
+.journey-arrows{
+  display:flex;
+  gap:12px;
+}
+
+.journey-btn{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:1px solid var(--lav);
+  background:rgba(255,255,255,.28);
+  color:var(--ink);
+  font-size:22px;
+  cursor:pointer;
+  transition:.3s ease;
+}
+
+.journey-btn:hover{
+  background:var(--lav);
+  transform:translateY(-2px);
+}
+
+.journey-count{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:.18em;
+  color:var(--muted);
+}
 
     .skills{
       display:grid;
@@ -757,8 +836,46 @@ var(--cream);
         align-items:start;
         gap:38px;
       }
+.timeline{
+  margin-top:60px;
+  border-top:1px solid var(--lav-line);
+}
 
-      .hero::after{
+.row{
+  grid-template-columns:1fr;
+  gap:18px;
+  padding:34px 0;
+}
+
+.row:hover{
+  padding-left:0;
+}
+
+.row h3{
+  font-size:40px;
+}
+
+.role{
+  margin-top:10px;
+}
+
+.row ul{
+  list-style:none;
+  color:var(--muted);
+  display:grid;
+  gap:10px;
+  padding-top:8px;
+}
+
+.row li{
+  font-size:16px;
+  line-height:1.7;
+}
+
+.row li:before{
+  content:"— ";
+  color:var(--lav);
+}  .hero::after{
         display:none;
       }
 
@@ -768,6 +885,48 @@ var(--cream);
         top:14%;
         right:-12%;
         opacity:.75;
+      }
+
+
+      .journey-magazine{
+        margin-top:48px;
+        box-shadow:10px 10px 0 rgba(178,171,184,.14);
+      }
+
+      .journey-magazine::before{
+        inset:16px;
+      }
+
+      .journey-page{
+        min-height:auto;
+        grid-template-columns:1fr;
+        gap:26px;
+        padding:34px;
+      }
+
+      .journey-number{
+        font-size:86px;
+      }
+
+      .journey-label{
+        margin-top:18px;
+      }
+
+      .journey-content h3{
+        font-size:46px;
+      }
+
+      .journey-content li{
+        font-size:15px;
+      }
+
+      .journey-controls{
+        padding:20px 26px;
+      }
+
+      .journey-btn{
+        width:44px;
+        height:44px;
       }
 
       .hero,
@@ -883,6 +1042,40 @@ var(--cream);
     }
 
     @media(max-width:520px){
+      .journey-page{
+        padding:28px 24px;
+      }
+
+      .journey-number{
+        font-size:72px;
+      }
+
+      .journey-content h3{
+        font-size:38px;
+      }
+
+      .journey-controls{
+        padding:18px 22px;
+      }
+
+      .journey-count{
+        letter-spacing:.14em;
+      }
+
+    .contact::after{
+  display:none;
+}
+.row h3{
+  font-size:36px;
+}
+
+.row{
+  padding:26px 24px 26px 34px;
+}
+.hero::before,
+.beliefs::before{
+  display:none;
+}
       section{
         padding:72px 6vw;
       }
@@ -1050,10 +1243,10 @@ var(--cream);
 
   <section class="hero">
     <div>
-      <div class="eyebrow">Marketing / Storytelling / Creative Direction</div>
+      <div class="eyebrow">Digital Marketing Specialist </div>
       <h1>SARAH<br><span>SAFWAN</span></h1>
       <div class="hero-statement">
-        I turn ideas into <em>stories</em>, and stories into digital experiences.
+        Marketing, storytelling, and a lifelong <em>curiousity</em>about how people think, feel, and connect.
       </div>
     </div>
 
@@ -1076,15 +1269,15 @@ var(--cream);
 <div class="marquee">
   <div class="marquee-track">
     <span>
-      becoming • learning • creating • reflecting •
+      marketing • storytelling • writing • research •
     </span>
 
     <span>
-      becoming • learning • creating • reflecting •
+      marketing • storytelling • writing • research •
     </span>
 
     <span>
-      becoming • learning • creating • reflecting •
+      marketing • storytelling • writing • research •
     </span>
   </div>
 </div>
@@ -1109,56 +1302,50 @@ My work spans marketing, writing, podcasting, and digital media, but at its core
 
         <div class="profile-grid">
           <div class="profile-note">
-            <span>01 / Foundation</span>
-            <h3>Business Administration</h3>
+            <span>01 / Curiousity</span>
+            <h3>Ideas</h3>
             <p>
-              A background that shapes how Sarah thinks about brands, people,
-              communication, strategy, and the business side of creative work.
+             I’m drawn to questions more than answers. The ideas, stories, and observations that make us pause, reflect, and see something differently.
             </p>
           </div>
 
           <div class="profile-note">
-            <span>02 / Practice</span>
-            <h3>Marketing</h3>
+            <span>02 / Perspective</span>
+            <h3>People</h3>
             <p>
-              A growing professional focus on content marketing, social media strategy,
-              SEO, digital advertising, and brand storytelling.
+             I’m drawn to questions more than answers. The ideas, stories, and observations that make us pause, reflect, and see something differently.
             </p>
           </div>
 
           <div class="profile-note">
-            <span>03 / Voice</span>
-            <h3>Creation</h3>
+            <span>03 / Expression</span>
+            <h3>Words</h3>
             <p>
-              An ongoing practice in understanding people, communicating ideas, and creating content with purpose. From social media and campaigns to personal brands and digital storytelling.
+            Writing has always been my way of making sense of the world. A space where thoughts become stories and ideas become something tangible.
             </p>
           </div>
 
           <div class="profile-note">
-            <span>04 / Method</span>
-            <h3>Research</h3>
+            <span>04 / Process</span>
+            <h3>Learning</h3>
             <p>
-              Psychology research experience that supports literature reviews,
-              information synthesis, curiosity, and human understanding.
+              I believe growth is a continuous practice. Every project, course, conversation, and challenge becomes part of an evolving body of knowledge.
             </p>
           </div>
 
           <div class="profile-note">
-            <span>05 / Direction</span>
+            <span>05 / Craft</span>
             <h3>Storytelling</h3>
             <p>
-              A belief that the strongest digital work is not only seen, but felt,
-              remembered, and connected to a real human insight.
+             The work I admire most is work that makes people feel something. Good storytelling creates meaning, memory, and connection.
             </p>
           </div>
 
           <div class="profile-note">
-            <span>06 / Identity</span>
-            <h3>Personal Brand</h3>
+            <span>06 / Becoming</span>
+            <h3>Direction</h3>
             <p>
-              A portfolio of work that reflects strategy, elegance, clarity, creativity,
-              and a distinct editorial point of view.
-            </p>
+Not a destination, but an ongoing journey of building, creating, questioning, and becoming the person I hope to be.</p>
           </div>
         </div>
       </div>
@@ -1183,7 +1370,7 @@ My work spans marketing, writing, podcasting, and digital media, but at its core
       <div class="archive-card small">
         <div class="number">02</div>
         <div>
-          <h3>Writing</h3>
+          <h3>Sae Writes</h3>
           <p>
             A collection of articles, reflections, observations, and unfinished thoughts. Writing has always been my way of understanding the world, and sometimes myself.
           </p>
@@ -1217,50 +1404,78 @@ My work spans marketing, writing, podcasting, and digital media, but at its core
     <div class="eyebrow">Experience</div>
     <h2 class="section-title">A timeline of <em>becoming</em>.</h2>
 
-    <div class="timeline">
-      <div class="row">
+    <div class="journey-magazine">
+      <div class="journey-page active">
         <div>
+          <div class="journey-number">01</div>
+          <div class="journey-label">Chapter One</div>
+        </div>
+
+        <div class="journey-content">
           <h3>The Sae Talk</h3>
           <div class="role">Creator & Host</div>
+          <ul> <li>Host and producer of a podcast exploring growth, identity, creativity, and modern life.</li> <li>Responsible for concept development, scripting, recording, editing, and publishing.</li> <li>Building meaningful conversations through audio storytelling.</li> </ul>
         </div>
-
-        <ul> <li>Host and producer of a podcast exploring growth, identity, creativity, and modern life.</li> <li>Responsible for concept development, scripting, recording, editing, and publishing.</li> <li>Building meaningful conversations through audio storytelling.</li> </ul>
       </div>
 
-      <div class="row">
+      <div class="journey-page">
         <div>
+          <div class="journey-number">02</div>
+          <div class="journey-label">Chapter Two</div>
+        </div>
+
+        <div class="journey-content">
           <h3>Sae Writes</h3>
           <div class="role">Writer & Creator</div>
+          <ul> <li>A personal writing platform dedicated to essays, reflections, and long-form storytelling.</li> <li>Exploring ideas through writing and documenting lessons learned along the way.</li> <li>Using words as a tool for reflection, creativity, and connection.</li> </ul>
         </div>
-
-     <ul> <li>A personal writing platform dedicated to essays, reflections, and long-form storytelling.</li> <li>Exploring ideas through writing and documenting lessons learned along the way.</li> <li>Using words as a tool for reflection, creativity, and connection.</li> </ul>
       </div>
 
-      <div class="row">
+      <div class="journey-page">
         <div>
+          <div class="journey-number">03</div>
+          <div class="journey-label">Chapter Three</div>
+        </div>
+
+        <div class="journey-content">
           <h3>Independent Creator</h3>
           <div class="role">Content & Personal Branding</div>
+          <ul> <li>Creating content across digital marketing, social media, personal branding, and storytelling.</li> <li>Developing strategic and creative projects designed to inform, connect, and engage.</li> <li>Continuously learning and building at the intersection of marketing and creativity.</li> </ul>
         </div>
-
-        <ul> <li>Creating content across digital marketing, social media, personal branding, and storytelling.</li> <li>Developing strategic and creative projects designed to inform, connect, and engage.</li> <li>Continuously learning and building at the intersection of marketing and creativity.</li> </ul>
       </div>
 
-        <div class="row">
+      <div class="journey-page">
         <div>
+          <div class="journey-number">04</div>
+          <div class="journey-label">Chapter Four</div>
+        </div>
+
+        <div class="journey-content">
           <h3>Thy Academia</h3>
           <div class="role">Founder & Content Creator</div>
+          <ul> <li>Built an educational and personal development platform focused on productivity and self-growth.</li> <li>Created written content and resources for students and lifelong learners.</li> <li>Developed a consistent creative voice while growing an engaged online community.</li> </ul>
         </div>
-
-      <ul> <li>Built an educational and personal development platform focused on productivity and self-growth.</li> <li>Created written content and resources for students and lifelong learners.</li> <li>Developed a consistent creative voice while growing an engaged online community.</li> </ul>
       </div>
 
-      <div class="row">
+      <div class="journey-page">
         <div>
-          <h3>Research Volunteer</h3>
-          <div class="role">Psychology Research</div>
+          <div class="journey-number">05</div>
+          <div class="journey-label">Chapter Five</div>
         </div>
 
-      <ul> <li>Contributed to psychology research projects through literature reviews and research support.</li> <li>Developed skills in information synthesis, critical thinking, and academic research.</li> <li>Gained valuable insights into human behavior and communication.</li> </ul>
+        <div class="journey-content">
+          <h3>Research Volunteer</h3>
+          <div class="role">Psychology Research</div>
+          <ul> <li>Contributed to psychology research projects through literature reviews and research support.</li> <li>Developed skills in information synthesis, critical thinking, and academic research.</li> <li>Gained valuable insights into human behavior and communication.</li> </ul>
+        </div>
+      </div>
+
+      <div class="journey-controls">
+        <div class="journey-count"><span id="journey-current">01</span> / 05</div>
+        <div class="journey-arrows">
+          <button class="journey-btn" type="button" id="journey-prev" aria-label="Previous chapter">←</button>
+          <button class="journey-btn" type="button" id="journey-next" aria-label="Next chapter">→</button>
+        </div>
       </div>
     </div>
   </section>
@@ -1386,6 +1601,28 @@ you can find me below.
   </footer>
 
   <script>
+    const journeyPages = document.querySelectorAll(".journey-page");
+    const journeyCurrent = document.getElementById("journey-current");
+    const journeyPrev = document.getElementById("journey-prev");
+    const journeyNext = document.getElementById("journey-next");
+    let journeyIndex = 0;
+
+    function showJourneyPage(index){
+      journeyPages.forEach(page=>page.classList.remove("active"));
+      journeyPages[index].classList.add("active");
+      journeyCurrent.textContent = String(index + 1).padStart(2, "0");
+    }
+
+    journeyPrev.addEventListener("click", ()=>{
+      journeyIndex = (journeyIndex - 1 + journeyPages.length) % journeyPages.length;
+      showJourneyPage(journeyIndex);
+    });
+
+    journeyNext.addEventListener("click", ()=>{
+      journeyIndex = (journeyIndex + 1) % journeyPages.length;
+      showJourneyPage(journeyIndex);
+    });
+
     const reveals = document.querySelectorAll(".reveal");
 
     const observer = new IntersectionObserver((entries)=>{
