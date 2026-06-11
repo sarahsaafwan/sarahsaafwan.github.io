@@ -121,8 +121,31 @@ var(--cream);
       gap:60px;
       align-items:end;
       padding-top:160px;
-      border-bottom:1px solid var(--lav-line);
+      border-bottom:1px solid rgba(178,171,184,.45);
       position:relative;
+      background:
+        radial-gradient(circle at 8% 18%, rgba(178,171,184,.18), transparent 30%),
+        radial-gradient(circle at 84% 22%, rgba(178,171,184,.13), transparent 28%),
+        var(--ink);
+      color:var(--cream);
+      margin-left:-5vw;
+      margin-right:-5vw;
+      padding-left:5vw;
+      padding-right:5vw;
+    }
+
+    .hero .eyebrow{
+      color:var(--lav);
+    }
+
+    .hero .hero-side p{
+      color:rgba(247,244,231,.72);
+    }
+
+    .hero .hero-tags span{
+      color:var(--cream);
+      background:rgba(178,171,184,.16);
+      border-color:rgba(178,171,184,.78);
     }
 
     .hero::before{
@@ -135,7 +158,13 @@ var(--cream);
       background:var(--lav-soft);
       border-radius:50%;
       filter:blur(8px);
-      z-index:-1;
+      z-index:0;
+      opacity:.72;
+    }
+
+    .hero > *{
+      position:relative;
+      z-index:1;
     }
 
     h1{
@@ -396,6 +425,133 @@ var(--cream);
       font-size:34px;
     }
 
+
+    .feature-section{
+      border-top:1px solid var(--lav-line);
+      border-bottom:1px solid var(--lav-line);
+      background:
+        radial-gradient(circle at 12% 18%, rgba(178,171,184,.18), transparent 28%),
+        rgba(255,255,255,.16);
+    }
+
+    .feature-layout{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:70px;
+      align-items:stretch;
+      margin-top:56px;
+    }
+
+    .feature-intro{
+      border-left:1px solid var(--lav);
+      padding-left:34px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      min-height:420px;
+    }
+
+    .feature-intro p{
+      color:var(--muted);
+      font-size:18px;
+      max-width:520px;
+      margin-top:28px;
+    }
+
+    .feature-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:34px;
+    }
+
+    .feature-meta span{
+      border:1px solid var(--lav);
+      background:var(--lav-light);
+      padding:8px 13px;
+      border-radius:999px;
+      font-size:12px;
+      color:var(--ink);
+    }
+
+    .feature-card{
+      border:1px solid var(--lav);
+      background:rgba(255,255,255,.28);
+      box-shadow:22px 22px 0 rgba(178,171,184,.18);
+      padding:42px;
+      min-height:420px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .feature-card::before{
+      content:"";
+      position:absolute;
+      top:-90px;
+      right:-80px;
+      width:220px;
+      height:220px;
+      background:var(--lav-soft);
+      border-radius:50%;
+      z-index:0;
+    }
+
+    .feature-card > *{
+      position:relative;
+      z-index:1;
+    }
+
+    .feature-card h3{
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(48px,6vw,86px);
+      line-height:.86;
+      font-weight:500;
+      letter-spacing:-.05em;
+      margin-bottom:24px;
+    }
+
+    .feature-card p{
+      color:var(--muted);
+      font-size:17px;
+      max-width:650px;
+    }
+
+    .feature-links{
+      display:grid;
+      gap:12px;
+      margin-top:34px;
+    }
+
+    .feature-link{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:18px;
+      padding:18px 0;
+      border-top:1px solid var(--lav-line);
+      transition:.35s ease;
+    }
+
+    .feature-link:hover{
+      padding-left:16px;
+      background:rgba(178,171,184,.14);
+    }
+
+    .feature-link strong{
+      font-family:"Cormorant Garamond",serif;
+      font-size:30px;
+      font-weight:500;
+      line-height:1;
+    }
+
+    .feature-link span{
+      color:var(--lav);
+      font-size:22px;
+    }
+
 .journey-magazine{
   margin-top:70px;
   border:1px solid var(--lav-line);
@@ -581,6 +737,14 @@ var(--cream);
     }
 
     .beliefs .eyebrow{color:var(--lav)}
+    .beliefs .section-title{
+  color:var(--cream);
+  margin-bottom:60px;
+}
+
+.beliefs .section-title em{
+  color:var(--lav);
+}
 
     .belief{
       font-family:"Cormorant Garamond",serif;
@@ -596,11 +760,23 @@ var(--cream);
       color:var(--lav);
     }
 
+    .cert-note{
+      color:var(--muted);
+      font-size:15px;
+      margin-top:22px;
+      max-width:560px;
+    }
+
+    .cert-note strong{
+      color:var(--ink);
+      font-weight:500;
+    }
+
     .certs{
       display:grid;
       grid-template-columns:repeat(4,1fr);
       gap:14px;
-      margin-top:60px;
+      margin-top:34px;
     }
 
     .cert{
@@ -614,6 +790,7 @@ var(--cream);
       line-height:1;
       background:rgba(255,255,255,.24);
       transition:.35s ease;
+      cursor:pointer;
     }
 
     .cert:hover{
@@ -800,7 +977,60 @@ var(--cream);
       font-weight:500;
       color:var(--ink);
     }
+.cert-modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.75);
+  backdrop-filter:blur(10px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  visibility:hidden;
+  transition:.35s ease;
+  z-index:9999;
+}
 
+.cert-modal.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.cert-modal-content{
+  background:rgba(178,171,184,.22);
+  border:1px solid var(--lav);
+  padding:20px;
+  width:min(900px,90vw);
+  transform:translateY(20px);
+  transition:.35s ease;
+  box-shadow:24px 24px 0 rgba(178,171,184,.22);
+}
+
+.cert-modal.active .cert-modal-content{
+  transform:translateY(0);
+}
+
+.cert-frame{
+  background:var(--cream);
+  padding:18px;
+  border:1px solid var(--lav-line);
+}
+
+.cert-frame img{
+  width:100%;
+  display:block;
+}
+
+.cert-close{
+  position:absolute;
+  top:30px;
+  right:30px;
+  background:none;
+  border:none;
+  color:white;
+  font-size:40px;
+  cursor:pointer;
+}
     footer{
       padding:28px 5vw;
       border-top:1px solid var(--lav-line);
@@ -929,6 +1159,22 @@ var(--cream);
         height:44px;
       }
 
+
+      .feature-layout{
+        grid-template-columns:1fr;
+        gap:34px;
+        margin-top:42px;
+      }
+
+      .feature-intro{
+        min-height:auto;
+      }
+
+      .feature-card{
+        min-height:auto;
+        box-shadow:10px 10px 0 rgba(178,171,184,.18);
+      }
+
       .hero,
       .profile-layout,
       .row,
@@ -1045,6 +1291,28 @@ var(--cream);
       .journey-page{
         padding:28px 24px;
       }
+
+      .feature-intro{
+        padding-left:22px;
+      }
+
+      .feature-card{
+        padding:26px;
+        box-shadow:8px 8px 0 rgba(178,171,184,.16);
+      }
+
+      .feature-card h3{
+        font-size:42px;
+      }
+
+      .feature-link{
+        align-items:flex-start;
+      }
+
+      .feature-link strong{
+        font-size:26px;
+      }
+
 
       .journey-number{
         font-size:72px;
@@ -1235,6 +1503,8 @@ var(--cream);
     <div class="nav-links">
       <a href="#profile">Profile</a>
       <a href="#archive">Archive</a>
+      <a href="#podcast">Podcast</a>
+      <a href="#substack">Substack</a>
       <a href="#experience">Experience</a>
       <a href="#beliefs">Beliefs</a>
       <a href="#contact">Contact</a>
@@ -1246,7 +1516,7 @@ var(--cream);
       <div class="eyebrow">Digital Marketing Specialist </div>
       <h1>SARAH<br><span>SAFWAN</span></h1>
       <div class="hero-statement">
-        Marketing, storytelling, and a lifelong <em>curiousity</em>about how people think, feel, and connect.
+        Marketing, storytelling, and a lifelong <em>curiousity</em> about how people think, feel, and connect.
       </div>
     </div>
 
@@ -1393,9 +1663,103 @@ Not a destination, but an ongoing journey of building, creating, questioning, an
         <div>
           <h3>Things I've Built</h3>
           <p>
-            Podcasts, platforms, websites, content, communities, and the occasional idea that refused to stay on paper.
+            Podcasts, platforms, content, communities, and the occasional idea that refused to stay on paper.
           </p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="podcast" class="feature-section reveal">
+    <div class="eyebrow">Podcast</div>
+    <h2 class="section-title">The audio space for <em>becoming</em>.</h2>
+
+    <div class="feature-layout">
+      <div class="feature-intro">
+        <div>
+          <p>
+            The Sae Talk began as a way for me to put words to the thoughts, questions, and lessons that have shaped my life. What started as personal reflection became a space for conversations about growth, identity, creativity, gratitude, and the ongoing process of becoming. Through stories, experiences, and honest discussions, I share what I'm learning about navigating life with intention while creating space for others to reflect on their own journeys too.
+          </p>
+
+          <div class="feature-meta">
+            <span>Self-improvement</span>
+            <span>Storytelling</span>
+            <span>Reflection</span>
+            <span>Modern Life</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div>
+          <h3>The Sae Talk</h3>
+          <p>
+            A collection of stories, reflections, and conversations inspired by the things I find myself returning to again and again; creativity, gratitude, personal growth, meaningful work, and the questions that make us see life a little differently.
+
+          </p>
+        </div>
+
+  <div class="feature-links">
+
+  <a class="feature-link"
+     href="https://open.spotify.com/show/0d1ueJYmkHtrESzCPtqx4n?si=6rRBAvf-TOSekQAv5Uelpg"
+     target="_blank">
+    <strong>Listen on Spotify</strong>
+    <span>↗</span>
+  </a>
+
+  <a class="feature-link"
+     href="https://podcasts.apple.com/us/podcast/the-sae-talk/id1885249003"
+     target="_blank">
+    <strong>Listen on Apple Podcasts</strong>
+    <span>↗</span>
+  </a>
+
+</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="substack" class="feature-section reveal">
+    <div class="eyebrow">Substack</div>
+    <h2 class="section-title">Essays, notes, and written <em>reflections</em>.</h2>
+
+    <div class="feature-layout">
+      <div class="feature-intro">
+        <div>
+          <p>
+             Sae Writes is where I slow down and put my thoughts into words. It's a collection of personal articles, reflections, observations, and the ideas that stay with me long after the moment has passed. Writing has always been how I make sense of the world and my place within it. Through stories, questions, lessons, and everyday experiences, this space allows me to explore the things I'm curious about and document the ongoing process of becoming.
+
+          </p>
+
+          <div class="feature-meta">
+            <span>Articles</span>
+            <span>Personal Writing</span>
+            <span>Ideas</span>
+            <span>Reflection</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div>
+          <h3>Sae Writes</h3>
+          <p>
+            A home for the thoughts that linger. Articles, reflections, and observations inspired by everyday life, meaningful conversations, good books, and the questions I'm still learning to answer.
+
+          </p>
+        </div>
+
+      <div class="feature-links">
+
+  <a class="feature-link"
+     href="https://substack.com/@saewrites?r=2aveg9&utm_medium=ios&utm_source=stories&shareImageVariant=light"
+     target="_blank">
+    <strong>Read on Substack</strong>
+    <span>↗</span>
+  </a>
+
+</div>
       </div>
     </div>
   </section>
@@ -1427,7 +1791,7 @@ Not a destination, but an ongoing journey of building, creating, questioning, an
         <div class="journey-content">
           <h3>Sae Writes</h3>
           <div class="role">Writer & Creator</div>
-          <ul> <li>A personal writing platform dedicated to essays, reflections, and long-form storytelling.</li> <li>Exploring ideas through writing and documenting lessons learned along the way.</li> <li>Using words as a tool for reflection, creativity, and connection.</li> </ul>
+          <ul> <li>A personal writing platform dedicated to articles/essays, reflections, and long-form storytelling.</li> <li>Exploring ideas through writing and documenting lessons learned along the way.</li> <li>Using words as a tool for reflection, creativity, and connection.</li> </ul>
         </div>
       </div>
 
@@ -1490,7 +1854,6 @@ Not a destination, but an ongoing journey of building, creating, questioning, an
         <p>Content Marketing</p>
         <p>Social Media Marketing</p>
         <p>Digital Advertising</p>
-        <p>SEO</p>
         <p>Email Marketing</p>
       </div>
 
@@ -1511,28 +1874,85 @@ Not a destination, but an ongoing journey of building, creating, questioning, an
     </div>
   </section>
 
-  <section id="beliefs" class="beliefs reveal">
-<div class="belief">There is beauty in paying attention.</div>
-<div class="belief">Growth rarely looks the way you expect it to.</div>
-<div class="belief">The most meaningful work starts with curiosity.</div>
-<div class="belief">People connect with honesty more than perfection.</div>
-<div class="belief">A good question can change everything.</div>
-  </section>
+<section id="beliefs" class="beliefs reveal">
+
+  <div class="eyebrow">Beliefs</div>
+
+  <h2 class="section-title">
+    Things I <em>believe</em>.
+  </h2>
+
+  <div class="belief">
+    Time moves whether we're ready or not. I'd rather move with it than spend my life waiting for the perfect moment.
+  </div>
+
+  <div class="belief">
+    Courage matters more than confidence. The people I admire most are the ones who keep going despite their fear.
+  </div>
+
+  <div class="belief">
+    Curiosity is one of the greatest gifts we have. There is always something new to learn, understand, or explore.
+  </div>
+
+  <div class="belief">
+    Our worth was never meant to be measured by grades, titles, salaries, or the approval of others.
+  </div>
+
+  <div class="belief">
+    You are capable of far more than you think. Most limits are accepted long before they become real.
+  </div>
+
+</section>
+
 
   <section class="reveal">
     <div class="eyebrow">Certifications</div>
     <h2 class="section-title">Proof of deliberate <em>learning</em>.</h2>
+    <p class="cert-note"><strong>Click any certification</strong> to view the certificate.</p>
 
-    <div class="certs">
-      <div class="cert">Google Fundamentals of Digital Marketing</div>
-      <div class="cert">HubSpot SEO</div>
-      <div class="cert">Social Media Marketing</div>
-      <div class="cert">Digital Advertising</div>
-      <div class="cert">Email Marketing</div>
-      <div class="cert">Inbound Marketing</div>
-      <div class="cert">Content Marketing</div>
-      <div class="cert">EF SET C2 English</div>
-    </div>
+<div class="certs">
+
+  <div class="cert"
+       data-cert="certifications/fundamentals.jpg">
+    Google Fundamentals of Digital Marketing
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/seo.png">
+    HubSpot SEO
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/socialmedia.png">
+    Social Media Marketing
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/digitaladvertising.png">
+    Digital Advertising
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/emailmarketing.png">
+    Email Marketing
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/inbound.png">
+    Inbound Marketing
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/contentmarketing.png">
+    Content Marketing
+  </div>
+
+  <div class="cert"
+       data-cert="certifications/english.jpg">
+    EF SET C2 English
+  </div>
+
+</div>
   </section>
 
   <section id="contact" class="contact reveal">
@@ -1588,7 +2008,7 @@ you can find me below.
        <div class="availability">
   <strong>Based in Egypt.</strong>
   <p>
-    Available for freelance projects, collaborations, and creative opportunities.
+    Available for full-time & part-time job opportunitiesfreelance projects, collaborations, and creative opportunities.
   </p>
 </div>
       </div>
@@ -1635,5 +2055,38 @@ you can find me below.
 
     reveals.forEach(el=>observer.observe(el));
   </script>
+  <div class="cert-modal" id="certModal">
+  <button class="cert-close" id="certClose">×</button>
+
+  <div class="cert-modal-content">
+    <div class="cert-frame">
+      <img id="certImage" src="" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+const certs = document.querySelectorAll(".cert");
+const modal = document.getElementById("certModal");
+const image = document.getElementById("certImage");
+const closeBtn = document.getElementById("certClose");
+
+certs.forEach(cert=>{
+  cert.addEventListener("click",()=>{
+    image.src = cert.dataset.cert;
+    modal.classList.add("active");
+  });
+});
+
+closeBtn.addEventListener("click",()=>{
+  modal.classList.remove("active");
+});
+
+modal.addEventListener("click",(e)=>{
+  if(e.target === modal){
+    modal.classList.remove("active");
+  }
+});
+</script>
 </body>
 </html>
