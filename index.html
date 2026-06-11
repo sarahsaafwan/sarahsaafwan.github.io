@@ -114,25 +114,26 @@ var(--cream);
       font-weight:600;
     }
 
-    .hero{
-      min-height:100vh;
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:60px;
-      align-items:end;
-      padding-top:160px;
-      border-bottom:1px solid rgba(178,171,184,.45);
-      position:relative;
-      background:
-        radial-gradient(circle at 8% 18%, rgba(178,171,184,.18), transparent 30%),
-        radial-gradient(circle at 84% 22%, rgba(178,171,184,.13), transparent 28%),
-        var(--ink);
-      color:var(--cream);
-      margin-left:-5vw;
-      margin-right:-5vw;
-      padding-left:5vw;
-      padding-right:5vw;
-    }
+  .hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:minmax(0,720px) minmax(0,430px);
+  justify-content:center;
+  gap:60px;
+  align-items:end;
+  padding-top:160px;
+  border-bottom:1px solid rgba(178,171,184,.45);
+  position:relative;
+  background:
+    radial-gradient(circle at 8% 18%, rgba(178,171,184,.18), transparent 30%),
+    radial-gradient(circle at 84% 22%, rgba(178,171,184,.13), transparent 28%),
+    var(--ink);
+  color:var(--cream);
+  margin-left:-5vw;
+  margin-right:-5vw;
+  padding-left:5vw;
+  padding-right:5vw;
+}
 
     .hero .eyebrow{
       color:var(--lav);
@@ -187,9 +188,7 @@ var(--cream);
       max-width:760px;
       margin-top:42px;
     }
-.hero-main{
-  padding-left:40px;
-}
+
     .hero-statement em{
       color:var(--lav);
       font-style:normal;
@@ -576,7 +575,7 @@ var(--cream);
 .journey-page{
   display:none;
   min-height:520px;
-  grid-template-columns:.32fr .68fr;
+  grid-template-columns:.38fr .62fr;
   gap:60px;
   padding:58px;
   position:relative;
@@ -592,7 +591,6 @@ var(--cream);
   line-height:.75;
   color:rgba(178,171,184,.58);
   letter-spacing:-.07em;
-  padding-right:30px;
 }
 
 .journey-label{
@@ -1058,87 +1056,62 @@ var(--cream);
     }
 
     @media(max-width:900px){
+      nav{padding:18px 6vw}
+      .nav-links{display:none}
+      section{padding:82px 6vw}
 
-  nav{padding:18px 6vw}
-  .nav-links{display:none}
-  section{padding:82px 6vw}
+      .hero{
+        min-height:100vh;
+        grid-template-columns:1fr;
+        padding-top:130px;
+        padding-bottom:72px;
+        padding-left:6vw;
+        padding-right:6vw;
+        align-content:center;
+        align-items:center;
+        gap:38px;
+        overflow:hidden;
+      }
 
-  .hero{
-    min-height:auto;
-    padding-top:130px;
-    padding-bottom:72px;
+      .hero-main{
+        padding-left:0;
+        max-width:720px;
+      }
 
-    padding-left:6vw;
-    padding-right:6vw;
+      .hero-statement{
+        font-size:38px;
+        max-width:100%;
+      }
 
-    align-items:start;
-    gap:38px;
+      .hero-side{
+        width:100%;
+        max-width:540px;
+        border-left:0;
+        padding-left:0;
+        border-top:1px solid var(--lav);
+        padding-top:26px;
+        margin-bottom:0;
+        overflow:hidden;
+      }
 
-    overflow:hidden;
-  }
+      .hero-side p{
+        font-size:16px;
+        max-width:100%;
+        margin-bottom:24px;
+      }
 
-  .hero-main{
-    padding-left:0;
-  }
+      .hero-tags{
+        max-width:100%;
+        gap:8px;
+        margin-top:20px;
+      }
 
-  .hero-statement{
-    font-size:38px;
-    max-width:100%;
-  }
+      .hero-tags span{
+        font-size:11px;
+        padding:7px 11px;
+      }
 
-  .hero-side{
-    width:100%;
-    overflow:hidden;
-  }
-
-  .hero-side p{
-    max-width:100%;
-  }
-
-  .hero-tags{
-    max-width:100%;
-  }
-
-  .timeline{
-    margin-top:60px;
-    border-top:1px solid var(--lav-line);
-  }
-
-  .row{
-    grid-template-columns:1fr;
-    gap:18px;
-    padding:34px 0;
-  }
-
-  .row:hover{
-    padding-left:0;
-  }
-
-  .row h3{
-    font-size:40px;
-  }
-
-  .role{
-    margin-top:10px;
-  }
-
-  .row ul{
-    list-style:none;
-    color:var(--muted);
-    display:grid;
-    gap:10px;
-    padding-top:8px;
-  }
-}
-.row li{
-  font-size:16px;
-  line-height:1.7;
-}
-
-.row li:before{
-  content:"— ";
-  color:var(--lav);
-}  .hero::after{
+      .hero::after{
         display:none;
       }
 
@@ -1150,6 +1123,46 @@ var(--cream);
         opacity:.75;
       }
 
+      .timeline{
+        margin-top:60px;
+        border-top:1px solid var(--lav-line);
+      }
+
+      .row{
+        grid-template-columns:1fr;
+        gap:18px;
+        padding:34px 0;
+      }
+
+      .row:hover{
+        padding-left:0;
+      }
+
+      .row h3{
+        font-size:40px;
+      }
+
+      .role{
+        margin-top:10px;
+      }
+
+      .row ul{
+        list-style:none;
+        color:var(--muted);
+        display:grid;
+        gap:10px;
+        padding-top:8px;
+      }
+
+      .row li{
+        font-size:16px;
+        line-height:1.7;
+      }
+
+      .row li:before{
+        content:"— ";
+        color:var(--lav);
+      }
 
       .journey-magazine{
         margin-top:48px;
@@ -1192,7 +1205,6 @@ var(--cream);
         height:44px;
       }
 
-
       .feature-layout{
         grid-template-columns:1fr;
         gap:34px;
@@ -1208,35 +1220,10 @@ var(--cream);
         box-shadow:10px 10px 0 rgba(178,171,184,.18);
       }
 
-      .hero,
       .profile-layout,
-      .row,
       .skills,
       .contact-layout{
         grid-template-columns:1fr;
-      }
-
-      .hero-side{
-        border-left:0;
-        padding-left:0;
-        border-top:1px solid var(--lav);
-        padding-top:26px;
-        margin-bottom:0;
-      }
-
-      .hero-side p{
-        font-size:16px;
-        margin-bottom:24px;
-      }
-
-      .hero-tags{
-        gap:8px;
-        margin-top:20px;
-      }
-
-      .hero-tags span{
-        font-size:11px;
-        padding:7px 11px;
       }
 
       .marquee{
@@ -1277,15 +1264,6 @@ var(--cream);
         min-height:300px;
       }
 
-      .row{
-        gap:18px;
-        padding:34px 0;
-      }
-
-      .row:hover{
-        padding-left:0;
-      }
-
       .skills{
         gap:16px;
         margin-top:42px;
@@ -1318,6 +1296,7 @@ var(--cream);
         flex-direction:column;
         gap:10px;
       }
+    }
 
     @media(max-width:520px){
       .journey-page{
@@ -1345,7 +1324,6 @@ var(--cream);
         font-size:26px;
       }
 
-
       .journey-number{
         font-size:72px;
       }
@@ -1362,20 +1340,23 @@ var(--cream);
         letter-spacing:.14em;
       }
 
-    .contact::after{
-  display:none;
-}
-.row h3{
-  font-size:36px;
-}
+      .contact::after{
+        display:none;
+      }
 
-.row{
-  padding:26px 24px 26px 34px;
-}
-.hero::before,
-.beliefs::before{
-  display:none;
-}
+      .row h3{
+        font-size:36px;
+      }
+
+      .row{
+        padding:26px 24px 26px 34px;
+      }
+
+      .hero::before,
+      .beliefs::before{
+        display:none;
+      }
+
       section{
         padding:72px 6vw;
       }
@@ -1394,20 +1375,32 @@ var(--cream);
         margin-bottom:22px;
       }
 
-    h1{
-  font-size:62px;
-  line-height:.82;
-}
+      h1{
+        font-size:58px;
+        line-height:.82;
+      }
 
-.hero-statement{
-  font-size:34px;
-  line-height:1.02;
-}
+      .hero-statement{
+        font-size:34px;
+        line-height:1.02;
+        margin-top:30px;
+      }
 
       .hero{
-        padding-top:118px;
-        padding-bottom:64px;
+        min-height:100vh;
+        padding-top:108px;
+        padding-bottom:56px;
+        align-content:center;
       }
+
+      .hero-main{
+        max-width:100%;
+      }
+
+      .hero-side{
+        max-width:100%;
+      }
+
       .section-title{
         font-size:46px;
         line-height:.92;
@@ -1452,10 +1445,6 @@ var(--cream);
 
       .archive-card h3{
         font-size:42px;
-      }
-
-      .row h3{
-        font-size:36px;
       }
 
       .skill{
@@ -1541,8 +1530,8 @@ var(--cream);
     </div>
   </nav>
 
- <section class="hero">
-  <div class="hero-main">
+  <section class="hero">
+    <div>
       <div class="eyebrow">Digital Marketing Specialist </div>
       <h1>SARAH<br><span>SAFWAN</span></h1>
       <div class="hero-statement">
