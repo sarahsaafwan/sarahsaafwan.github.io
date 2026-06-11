@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sarah Safwan — Digital Archive</title>
+  <title>Sarah Safwan - Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -566,8 +566,8 @@ var(--cream);
     .contact::after{
       content:"CONNECT";
       position:absolute;
-      right:-42px;
-      bottom:24px;
+      right:30px;
+      bottom:40px;
       font-family:"Cormorant Garamond",serif;
       font-size:clamp(70px,13vw,190px);
       line-height:1;
@@ -746,13 +746,29 @@ var(--cream);
     }
 
     @media(max-width:900px){
-      nav{padding:20px 6vw}
+      nav{padding:18px 6vw}
       .nav-links{display:none}
-      section{padding:90px 6vw}
-      .profile-photo-circle{
-  width:260px;
-  height:260px;
-}
+      section{padding:82px 6vw}
+
+      .hero{
+        min-height:auto;
+        padding-top:130px;
+        padding-bottom:72px;
+        align-items:start;
+        gap:38px;
+      }
+
+      .hero::after{
+        display:none;
+      }
+
+      .hero::before{
+        width:190px;
+        height:190px;
+        top:14%;
+        right:-12%;
+        opacity:.75;
+      }
 
       .hero,
       .profile-layout,
@@ -766,23 +782,80 @@ var(--cream);
         border-left:0;
         padding-left:0;
         border-top:1px solid var(--lav);
-        padding-top:30px;
+        padding-top:26px;
+        margin-bottom:0;
+      }
+
+      .hero-side p{
+        font-size:16px;
+        margin-bottom:24px;
+      }
+
+      .hero-tags{
+        gap:8px;
+        margin-top:20px;
+      }
+
+      .hero-tags span{
+        font-size:11px;
+        padding:7px 11px;
+      }
+
+      .marquee{
+        font-size:27px;
+        padding:15px 0;
+      }
+
+      .profile-layout{
+        gap:44px;
+      }
+
+      .profile-photo-circle{
+        width:100%;
+        max-width:360px;
+        height:auto;
+        aspect-ratio:1/1;
       }
 
       .profile-grid{
         grid-template-columns:1fr;
+        margin-top:42px;
       }
 
       .profile-panel{
-        box-shadow:10px 10px 0 rgba(178,171,184,.22);
+        box-shadow:10px 10px 0 rgba(178,171,184,.18);
       }
 
       .wide,.small,.half{
         grid-column:span 12;
       }
 
+      .archive-grid{
+        gap:14px;
+        margin-top:44px;
+      }
+
+      .archive-card{
+        min-height:300px;
+      }
+
+      .row{
+        gap:18px;
+        padding:34px 0;
+      }
+
+      .row:hover{
+        padding-left:0;
+      }
+
+      .skills{
+        gap:16px;
+        margin-top:42px;
+      }
+
       .certs{
         grid-template-columns:repeat(2,1fr);
+        margin-top:42px;
       }
 
       .contact::before{
@@ -791,12 +864,12 @@ var(--cream);
 
       .contact-copy{
         min-height:auto;
-        padding-left:24px;
+        padding-left:22px;
       }
 
       .contact-card{
         min-height:auto;
-        box-shadow:12px 12px 0 rgba(178,171,184,.22);
+        box-shadow:10px 10px 0 rgba(178,171,184,.18);
       }
 
       .contact-card-top{
@@ -810,10 +883,125 @@ var(--cream);
     }
 
     @media(max-width:520px){
-      h1{font-size:76px}
-      .certs{grid-template-columns:1fr}
-      .archive-card{min-height:300px}
-      .profile-panel{padding:26px}
+      section{
+        padding:72px 6vw;
+      }
+
+      nav{
+        padding:16px 6vw;
+      }
+
+      .brand{
+        font-size:23px;
+      }
+
+      .eyebrow{
+        font-size:10px;
+        letter-spacing:.17em;
+        margin-bottom:22px;
+      }
+
+      h1{
+        font-size:64px;
+        line-height:.82;
+      }
+
+      .hero{
+        padding-top:118px;
+        padding-bottom:64px;
+      }
+
+      .hero-statement{
+        font-size:38px;
+        line-height:1;
+        margin-top:30px;
+      }
+
+      .section-title{
+        font-size:46px;
+        line-height:.92;
+      }
+
+      .profile-photo-circle{
+        max-width:100%;
+        margin-top:32px;
+        box-shadow:
+          10px 10px 0 rgba(178,171,184,.16),
+          0 18px 44px rgba(35,35,35,.06);
+      }
+
+      .profile-panel,
+      .contact-card{
+        padding:26px;
+        box-shadow:8px 8px 0 rgba(178,171,184,.16);
+      }
+
+      .profile-panel p{
+        font-size:17px;
+      }
+
+      .profile-note,
+      .skill,
+      .archive-card,
+      .cert{
+        padding:24px;
+      }
+
+      .profile-note{
+        min-height:auto;
+      }
+
+      .profile-note h3{
+        font-size:32px;
+      }
+
+      .archive-card{
+        min-height:280px;
+      }
+
+      .archive-card h3{
+        font-size:42px;
+      }
+
+      .row h3{
+        font-size:36px;
+      }
+
+      .skill{
+        min-height:auto;
+      }
+
+      .skill h3{
+        font-size:36px;
+      }
+
+      .belief{
+        font-size:38px;
+        line-height:.95;
+        padding:28px 0;
+      }
+
+      .certs{
+        grid-template-columns:1fr;
+      }
+
+      .cert{
+        min-height:120px;
+        font-size:23px;
+      }
+
+      .contact-copy{
+        padding-left:18px;
+      }
+
+      .contact-copy h2{
+        font-size:54px;
+        line-height:.86;
+      }
+
+      .contact-copy p{
+        font-size:16px;
+      }
 
       .contact-card{
         padding:26px;
@@ -822,15 +1010,25 @@ var(--cream);
       .contact-link{
         grid-template-columns:1fr;
         gap:8px;
+        padding:20px 0;
+      }
+
+      .contact-link:hover{
+        padding-left:0;
       }
 
       .contact-link strong{
-        font-size:30px;
+        font-size:26px;
+        word-break:break-word;
       }
 
       .availability{
         flex-direction:column;
         align-items:flex-start;
+      }
+
+      .availability strong{
+        font-size:25px;
       }
     }
   </style>
