@@ -16524,6 +16524,7 @@ I would absolutely recommend her work to anyone who enjoys thoughtful conversati
       action="https://assets.mailerlite.com/jsonp/2516645/forms/193284113606640766/subscribe"
       data-code=""
       method="post"
+      target="newsletter-hidden-frame"
     >
       <input
         aria-label="Email address"
@@ -16548,6 +16549,12 @@ I would absolutely recommend her work to anyone who enjoys thoughtful conversati
       </button>
       <input type="hidden" name="anticsrf" value="true">
     </form>
+    <iframe
+      name="newsletter-hidden-frame"
+      id="newsletter-hidden-frame"
+      style="display:none;"
+      title="Newsletter submission"
+    ></iframe>
   </div>
   <div
     id="newsletter-success"
@@ -17352,6 +17359,30 @@ ${form.get("message") || ""}`
   ).catch(function () {
     // Silently ignore tracking request errors.
   });
+</script>
+<script>
+  (function () {
+    const newsletterForm = document.getElementById("newsletter-form");
+    const newsletterFrame = document.getElementById("newsletter-hidden-frame");
+    const newsletterSuccess = document.getElementById("newsletter-success");
+
+    let newsletterSubmitted = false;
+
+    if (newsletterForm && newsletterFrame && newsletterSuccess) {
+      newsletterForm.addEventListener("submit", function () {
+        newsletterSubmitted = true;
+      });
+
+      newsletterFrame.addEventListener("load", function () {
+        if (!newsletterSubmitted) return;
+
+        newsletterForm.style.display = "none";
+        newsletterSuccess.style.display = "block";
+
+        newsletterSubmitted = false;
+      });
+    }
+  })();
 </script>
 </body>
 </html>
