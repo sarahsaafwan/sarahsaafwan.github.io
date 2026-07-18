@@ -16524,7 +16524,6 @@ I would absolutely recommend her work to anyone who enjoys thoughtful conversati
       action="https://assets.mailerlite.com/jsonp/2516645/forms/193284113606640766/subscribe"
       data-code=""
       method="post"
-      target="newsletter-hidden-frame"
     >
       <input
         aria-label="Email address"
@@ -16549,12 +16548,6 @@ I would absolutely recommend her work to anyone who enjoys thoughtful conversati
       </button>
       <input type="hidden" name="anticsrf" value="true">
     </form>
-    <iframe
-      name="newsletter-hidden-frame"
-      id="newsletter-hidden-frame"
-      style="display:none;"
-      title="Newsletter submission"
-    ></iframe>
   </div>
   <div
     id="newsletter-success"
@@ -17361,28 +17354,71 @@ ${form.get("message") || ""}`
   });
 </script>
 <script>
-  (function () {
+  document.addEventListener("DOMContentLoaded", function () {
     const newsletterForm = document.getElementById("newsletter-form");
-    const newsletterFrame = document.getElementById("newsletter-hidden-frame");
     const newsletterSuccess = document.getElementById("newsletter-success");
 
-    let newsletterSubmitted = false;
+    if (!newsletterForm || !newsletterSuccess) return;
 
-    if (newsletterForm && newsletterFrame && newsletterSuccess) {
-      newsletterForm.addEventListener("submit", function () {
-        newsletterSubmitted = true;
-      });
+    newsletterForm.addEventListener("submit", async function (event) {
+      event.preventDefault();
+      event.stopPropagation();
 
-      newsletterFrame.addEventListener("load", function () {
-        if (!newsletterSubmitted) return;
+      const emailInput = newsletterForm.querySelector(
+        'input[name="fields[email]"]'
+      );
+
+      const submitButton = newsletterForm.querySelector(
+        'button[type="submit"]'
+      );
+
+      const loadingButton = newsletterForm.querySelector(
+        "button.loading"
+      );
+
+      if (!emailInput || !emailInput.checkValidity()) {
+        newsletterForm.reportValidity();
+        return;
+      }
+
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.style.display = "none";
+      }
+
+      if (loadingButton) {
+        loadingButton.style.display = "inline-flex";
+      }
+
+      try {
+        const formData = new FormData(newsletterForm);
+
+        await fetch(newsletterForm.action, {
+          method: "POST",
+          body: formData,
+          mode: "no-cors"
+        });
 
         newsletterForm.style.display = "none";
         newsletterSuccess.style.display = "block";
+      } catch (error) {
+        console.error("Newsletter signup failed:", error);
 
-        newsletterSubmitted = false;
-      });
-    }
-  })();
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.style.display = "";
+        }
+
+        if (loadingButton) {
+          loadingButton.style.display = "none";
+        }
+
+        alert(
+          "Something went wrong while subscribing. Please try again."
+        );
+      }
+    });
+  });
 </script>
 </body>
 </html>
