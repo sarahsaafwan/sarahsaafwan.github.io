@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /enquiries
+Disallow: /feedback-review
+Disallow: /confirmation
+Sitemap: https://sarahsaafwan.github.io/sitemap.xml

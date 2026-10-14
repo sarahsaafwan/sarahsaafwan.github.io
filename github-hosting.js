@@ -1,0 +1,2 @@
+/* Public GitHub Pages frontend; existing secure form storage stays on Sites. */
+(function(){'use strict';const backend='https://sarah-safwan-portfolio.alaa-saf92.chatgpt.site';const original=window.fetch.bind(window);window.fetch=function(input,init){if(typeof input==='string'&&input.startsWith('/api/'))return original(backend+input,{...init,credentials:'omit'});return original(input,init);};if(['enquiries.html','feedback-review.html'].includes(location.pathname.split('/').pop()))location.replace(backend+location.pathname);})();
