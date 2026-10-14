@@ -1,0 +1,1226 @@
+[
+  {
+    "service_id": 1,
+    "service": "Social Media Content Design",
+    "tier": 1,
+    "name": "The Starter Set",
+    "scope": "3 coordinated static designs",
+    "starting_from": {
+      "international_usd": 105,
+      "egypt_egp": 3200,
+      "lebanon_usd": 100
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s01_p01",
+    "scope_notes": "One approved static format, supplied copy/assets, one feedback round",
+    "exclusions": "Original copy, extra sizes, AI production",
+    "gate": ""
+  },
+  {
+    "service_id": 1,
+    "service": "Social Media Content Design",
+    "tier": 2,
+    "name": "The Set",
+    "scope": "6 coordinated static designs",
+    "starting_from": {
+      "international_usd": 195,
+      "egypt_egp": 5700,
+      "lebanon_usd": 170
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s01_p01",
+    "scope_notes": "One approved static format, supplied copy/assets, one feedback round",
+    "exclusions": "Original copy, extra sizes, AI production",
+    "gate": ""
+  },
+  {
+    "service_id": 1,
+    "service": "Social Media Content Design",
+    "tier": 3,
+    "name": "The Collection",
+    "scope": "12 coordinated static designs",
+    "starting_from": {
+      "international_usd": 370,
+      "egypt_egp": 10800,
+      "lebanon_usd": 320
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s01_p01",
+    "scope_notes": "One approved static format, supplied copy/assets, one feedback round",
+    "exclusions": "Original copy, extra sizes, AI production",
+    "gate": ""
+  },
+  {
+    "service_id": 2,
+    "service": "Carousel & Post Production",
+    "tier": 1,
+    "name": "The Carousel Pair",
+    "scope": "2 coordinated carousels, up to 5 slides each",
+    "starting_from": {
+      "international_usd": 180,
+      "egypt_egp": 5400,
+      "lebanon_usd": 195
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s02_p01",
+    "scope_notes": "One coherent five-slide carousel from supplied copy",
+    "exclusions": "Original message development, extra slides",
+    "gate": ""
+  },
+  {
+    "service_id": 2,
+    "service": "Carousel & Post Production",
+    "tier": 2,
+    "name": "The Carousel Set",
+    "scope": "3 coordinated carousels, up to 5 slides each",
+    "starting_from": {
+      "international_usd": 265,
+      "egypt_egp": 8000,
+      "lebanon_usd": 285
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s02_p01",
+    "scope_notes": "One coherent five-slide carousel from supplied copy",
+    "exclusions": "Original message development, extra slides",
+    "gate": ""
+  },
+  {
+    "service_id": 2,
+    "service": "Carousel & Post Production",
+    "tier": 3,
+    "name": "The Carousel Series",
+    "scope": "5 coordinated carousels, up to 5 slides each",
+    "starting_from": {
+      "international_usd": 430,
+      "egypt_egp": 13000,
+      "lebanon_usd": 465
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s02_p01",
+    "scope_notes": "One coherent five-slide carousel from supplied copy",
+    "exclusions": "Original message development, extra slides",
+    "gate": ""
+  },
+  {
+    "service_id": 3,
+    "service": "Short-form Video Editing",
+    "tier": 1,
+    "name": "The Edit Duo",
+    "scope": "2 coordinated edits, up to 30 sec each",
+    "starting_from": {
+      "international_usd": 125,
+      "egypt_egp": 3900,
+      "lebanon_usd": 110
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s03_p01",
+    "scope_notes": "Edit client-supplied footage; agreed format; one review",
+    "exclusions": "Filming, raw project files, extensive VFX",
+    "gate": ""
+  },
+  {
+    "service_id": 3,
+    "service": "Short-form Video Editing",
+    "tier": 2,
+    "name": "The Trio",
+    "scope": "3 coordinated video edits, up to 30 sec each",
+    "starting_from": {
+      "international_usd": 180,
+      "egypt_egp": 5700,
+      "lebanon_usd": 155
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s03_p01",
+    "scope_notes": "Edit client-supplied footage; agreed format; one review",
+    "exclusions": "Filming, raw project files, extensive VFX",
+    "gate": ""
+  },
+  {
+    "service_id": 3,
+    "service": "Short-form Video Editing",
+    "tier": 3,
+    "name": "The Edit Suite",
+    "scope": "6 coordinated video edits, up to 30 sec each",
+    "starting_from": {
+      "international_usd": 350,
+      "egypt_egp": 11000,
+      "lebanon_usd": 300
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s03_p01",
+    "scope_notes": "Edit client-supplied footage; agreed format; one review",
+    "exclusions": "Filming, raw project files, extensive VFX",
+    "gate": ""
+  },
+  {
+    "service_id": 4,
+    "service": "Content Planning",
+    "tier": 1,
+    "name": "The Calendar",
+    "scope": "4-week plan for 1 platform",
+    "starting_from": {
+      "international_usd": 180,
+      "egypt_egp": 5500,
+      "lebanon_usd": 150
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s04_p01",
+    "scope_notes": "Pillars, topics, format recommendations, dated calendar",
+    "exclusions": "Finished assets, account management, reporting",
+    "gate": ""
+  },
+  {
+    "service_id": 4,
+    "service": "Content Planning",
+    "tier": 2,
+    "name": "The Cross-Platform",
+    "scope": "4-week coordinated plan for 2 platforms",
+    "starting_from": {
+      "international_usd": 300,
+      "egypt_egp": 9100,
+      "lebanon_usd": 250
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s04_p01",
+    "scope_notes": "Pillars, topics, format recommendations, dated calendar",
+    "exclusions": "Finished assets, account management, reporting",
+    "gate": ""
+  },
+  {
+    "service_id": 4,
+    "service": "Content Planning",
+    "tier": 3,
+    "name": "The Quarter",
+    "scope": "12-week coordinated plan for 1 platform",
+    "starting_from": {
+      "international_usd": 480,
+      "egypt_egp": 14600,
+      "lebanon_usd": 400
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s04_p01",
+    "scope_notes": "Pillars, topics, format recommendations, dated calendar",
+    "exclusions": "Finished assets, account management, reporting",
+    "gate": ""
+  },
+  {
+    "service_id": 5,
+    "service": "Creative Concept Development",
+    "tier": 1,
+    "name": "The Direction",
+    "scope": "1 concept with moodboard and rationale",
+    "starting_from": {
+      "international_usd": 140,
+      "egypt_egp": 4200,
+      "lebanon_usd": 120
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s05_p01",
+    "scope_notes": "One direction, rationale, references, suggested formats",
+    "exclusions": "Finished campaign production, extensive research",
+    "gate": ""
+  },
+  {
+    "service_id": 5,
+    "service": "Creative Concept Development",
+    "tier": 2,
+    "name": "The Alternatives",
+    "scope": "2 distinct concepts for 1 brief",
+    "starting_from": {
+      "international_usd": 260,
+      "egypt_egp": 7800,
+      "lebanon_usd": 225
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s05_p01",
+    "scope_notes": "One direction, rationale, references, suggested formats",
+    "exclusions": "Finished campaign production, extensive research",
+    "gate": ""
+  },
+  {
+    "service_id": 5,
+    "service": "Creative Concept Development",
+    "tier": 3,
+    "name": "The Campaign Study",
+    "scope": "3 creative directions for 1 brief",
+    "starting_from": {
+      "international_usd": 375,
+      "egypt_egp": 11200,
+      "lebanon_usd": 325
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s05_p01",
+    "scope_notes": "One direction, rationale, references, suggested formats",
+    "exclusions": "Finished campaign production, extensive research",
+    "gate": ""
+  },
+  {
+    "service_id": 6,
+    "service": "Marketing Research",
+    "tier": 1,
+    "name": "The Snapshot",
+    "scope": "Public-source review of 3 competitors",
+    "starting_from": {
+      "international_usd": 220,
+      "egypt_egp": 6800,
+      "lebanon_usd": 195
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s06_p01",
+    "scope_notes": "Public-source review of 3 agreed competitors and findings",
+    "exclusions": "Paid datasets, expanded platforms, confidential claims",
+    "gate": ""
+  },
+  {
+    "service_id": 6,
+    "service": "Marketing Research",
+    "tier": 2,
+    "name": "The Category Review",
+    "scope": "Public-source review of 5 competitors",
+    "starting_from": {
+      "international_usd": 335,
+      "egypt_egp": 10400,
+      "lebanon_usd": 300
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s06_p01",
+    "scope_notes": "Public-source review of 3 agreed competitors and findings",
+    "exclusions": "Paid datasets, expanded platforms, confidential claims",
+    "gate": ""
+  },
+  {
+    "service_id": 6,
+    "service": "Marketing Research",
+    "tier": 3,
+    "name": "The Landscape",
+    "scope": "Public-source review of 8 competitors",
+    "starting_from": {
+      "international_usd": 480,
+      "egypt_egp": 14900,
+      "lebanon_usd": 430
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s06_p01",
+    "scope_notes": "Public-source review of 3 agreed competitors and findings",
+    "exclusions": "Paid datasets, expanded platforms, confidential claims",
+    "gate": ""
+  },
+  {
+    "service_id": 7,
+    "service": "Copywriting & Website Copy",
+    "tier": 1,
+    "name": "The Page Pair",
+    "scope": "2 connected web pages, up to 500 words each",
+    "starting_from": {
+      "international_usd": 205,
+      "egypt_egp": 6200,
+      "lebanon_usd": 180
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s07_p01",
+    "scope_notes": "One-language copy from approved brief; one revision",
+    "exclusions": "Website build, deep original research, Arabic second version",
+    "gate": ""
+  },
+  {
+    "service_id": 7,
+    "service": "Copywriting & Website Copy",
+    "tier": 2,
+    "name": "The Website Edit",
+    "scope": "3 connected pages, up to 500 words each",
+    "starting_from": {
+      "international_usd": 295,
+      "egypt_egp": 8800,
+      "lebanon_usd": 255
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s07_p01",
+    "scope_notes": "One-language copy from approved brief; one revision",
+    "exclusions": "Website build, deep original research, Arabic second version",
+    "gate": ""
+  },
+  {
+    "service_id": 7,
+    "service": "Copywriting & Website Copy",
+    "tier": 3,
+    "name": "The Site Copy",
+    "scope": "5 connected pages, up to 500 words each",
+    "starting_from": {
+      "international_usd": 465,
+      "egypt_egp": 13900,
+      "lebanon_usd": 400
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s07_p01",
+    "scope_notes": "One-language copy from approved brief; one revision",
+    "exclusions": "Website build, deep original research, Arabic second version",
+    "gate": ""
+  },
+  {
+    "service_id": 8,
+    "service": "Long-form Editorial Writing",
+    "tier": 1,
+    "name": "The Editorial Pair",
+    "scope": "2 related articles, 800–1,000 words each",
+    "starting_from": {
+      "international_usd": 235,
+      "egypt_egp": 7200,
+      "lebanon_usd": 205
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s08_p01",
+    "scope_notes": "Non-specialist editorial article with accessible basic research",
+    "exclusions": "Expert interviews, technical research, original graphics",
+    "gate": ""
+  },
+  {
+    "service_id": 8,
+    "service": "Long-form Editorial Writing",
+    "tier": 2,
+    "name": "The Editorial Set",
+    "scope": "3 related articles, 800–1,000 words each",
+    "starting_from": {
+      "international_usd": 340,
+      "egypt_egp": 10200,
+      "lebanon_usd": 300
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s08_p01",
+    "scope_notes": "Non-specialist editorial article with accessible basic research",
+    "exclusions": "Expert interviews, technical research, original graphics",
+    "gate": ""
+  },
+  {
+    "service_id": 8,
+    "service": "Long-form Editorial Writing",
+    "tier": 3,
+    "name": "The Editorial Series",
+    "scope": "5 related articles, 800–1,000 words each",
+    "starting_from": {
+      "international_usd": 560,
+      "egypt_egp": 17000,
+      "lebanon_usd": 485
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s08_p01",
+    "scope_notes": "Non-specialist editorial article with accessible basic research",
+    "exclusions": "Expert interviews, technical research, original graphics",
+    "gate": ""
+  },
+  {
+    "service_id": 9,
+    "service": "Email Marketing Content",
+    "tier": 1,
+    "name": "The Email Pair",
+    "scope": "2 related emails",
+    "starting_from": {
+      "international_usd": 190,
+      "egypt_egp": 5700,
+      "lebanon_usd": 170
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s09_p01",
+    "scope_notes": "Subject, preview, body and CTA",
+    "exclusions": "Automation setup, platform administration",
+    "gate": ""
+  },
+  {
+    "service_id": 9,
+    "service": "Email Marketing Content",
+    "tier": 2,
+    "name": "The Sequence",
+    "scope": "3 related emails",
+    "starting_from": {
+      "international_usd": 280,
+      "egypt_egp": 8500,
+      "lebanon_usd": 250
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s09_p01",
+    "scope_notes": "Subject, preview, body and CTA",
+    "exclusions": "Automation setup, platform administration",
+    "gate": ""
+  },
+  {
+    "service_id": 9,
+    "service": "Email Marketing Content",
+    "tier": 3,
+    "name": "The Campaign",
+    "scope": "5 related emails",
+    "starting_from": {
+      "international_usd": 440,
+      "egypt_egp": 13300,
+      "lebanon_usd": 390
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s09_p01",
+    "scope_notes": "Subject, preview, body and CTA",
+    "exclusions": "Automation setup, platform administration",
+    "gate": ""
+  },
+  {
+    "service_id": 10,
+    "service": "SEO Content & Page Optimization",
+    "tier": 1,
+    "name": "The Page Review",
+    "scope": "On-page content review for 1 page",
+    "starting_from": {
+      "international_usd": 60,
+      "egypt_egp": 1800,
+      "lebanon_usd": 55
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s10_p01",
+    "scope_notes": "Title, headings, meta, structure, on-page recommendations",
+    "exclusions": "Technical SEO, rankings, backlinks, implementation",
+    "gate": "LIMITED_SCOPE"
+  },
+  {
+    "service_id": 10,
+    "service": "SEO Content & Page Optimization",
+    "tier": 2,
+    "name": "The Site Review",
+    "scope": "On-page content reviews for 3 pages",
+    "starting_from": {
+      "international_usd": 160,
+      "egypt_egp": 4700,
+      "lebanon_usd": 145
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s10_p01",
+    "scope_notes": "Title, headings, meta, structure, on-page recommendations",
+    "exclusions": "Technical SEO, rankings, backlinks, implementation",
+    "gate": "LIMITED_SCOPE"
+  },
+  {
+    "service_id": 10,
+    "service": "SEO Content & Page Optimization",
+    "tier": 3,
+    "name": "The Content Audit",
+    "scope": "On-page content reviews for 5 pages",
+    "starting_from": {
+      "international_usd": 255,
+      "egypt_egp": 7600,
+      "lebanon_usd": 235
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s10_p01",
+    "scope_notes": "Title, headings, meta, structure, on-page recommendations",
+    "exclusions": "Technical SEO, rankings, backlinks, implementation",
+    "gate": "LIMITED_SCOPE"
+  },
+  {
+    "service_id": 11,
+    "service": "Bilingual English/Arabic Content",
+    "tier": 1,
+    "name": "The Adaptation Pair",
+    "scope": "2 related assets, up to 500 source words each",
+    "starting_from": {
+      "international_usd": 190,
+      "egypt_egp": 5700,
+      "lebanon_usd": 170
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s11_p01",
+    "scope_notes": "Adapt approved English source into agreed Lebanese or MSA register",
+    "exclusions": "Second original campaign, proofreading other files",
+    "gate": ""
+  },
+  {
+    "service_id": 11,
+    "service": "Bilingual English/Arabic Content",
+    "tier": 2,
+    "name": "The Content Set",
+    "scope": "Adaptation of up to 1,500 source words",
+    "starting_from": {
+      "international_usd": 275,
+      "egypt_egp": 8300,
+      "lebanon_usd": 250
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s11_p01",
+    "scope_notes": "Adapt approved English source into agreed Lebanese or MSA register",
+    "exclusions": "Second original campaign, proofreading other files",
+    "gate": ""
+  },
+  {
+    "service_id": 11,
+    "service": "Bilingual English/Arabic Content",
+    "tier": 3,
+    "name": "The Extended Set",
+    "scope": "Adaptation of up to 3,000 source words",
+    "starting_from": {
+      "international_usd": 510,
+      "egypt_egp": 15300,
+      "lebanon_usd": 460
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s11_p01",
+    "scope_notes": "Adapt approved English source into agreed Lebanese or MSA register",
+    "exclusions": "Second original campaign, proofreading other files",
+    "gate": ""
+  },
+  {
+    "service_id": 12,
+    "service": "Brand Visual Direction",
+    "tier": 1,
+    "name": "The Direction",
+    "scope": "Visual direction with references and rationale",
+    "starting_from": {
+      "international_usd": 240,
+      "egypt_egp": 7200,
+      "lebanon_usd": 210
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s12_p01",
+    "scope_notes": "Moodboard, palette, type direction, 3 sample applications",
+    "exclusions": "Complete brand strategy, logo, trademark checks",
+    "gate": ""
+  },
+  {
+    "service_id": 12,
+    "service": "Brand Visual Direction",
+    "tier": 2,
+    "name": "The System",
+    "scope": "Direction with 3 example applications",
+    "starting_from": {
+      "international_usd": 375,
+      "egypt_egp": 11200,
+      "lebanon_usd": 330
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s12_p01",
+    "scope_notes": "Moodboard, palette, type direction, 3 sample applications",
+    "exclusions": "Complete brand strategy, logo, trademark checks",
+    "gate": ""
+  },
+  {
+    "service_id": 12,
+    "service": "Brand Visual Direction",
+    "tier": 3,
+    "name": "The Extended System",
+    "scope": "Direction with 6 example applications",
+    "starting_from": {
+      "international_usd": 530,
+      "egypt_egp": 15900,
+      "lebanon_usd": 465
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s12_p01",
+    "scope_notes": "Moodboard, palette, type direction, 3 sample applications",
+    "exclusions": "Complete brand strategy, logo, trademark checks",
+    "gate": ""
+  },
+  {
+    "service_id": 13,
+    "service": "Digital Logo & Wordmark",
+    "tier": 1,
+    "name": "The Wordmark",
+    "scope": "Digital-only wordmark and export files",
+    "starting_from": {
+      "international_usd": 220,
+      "egypt_egp": 6600,
+      "lebanon_usd": 190
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s13_p01",
+    "scope_notes": "One chosen direction, variations in supported digital formats",
+    "exclusions": "Vector masters, trademark eligibility, unrestricted third-party rights",
+    "gate": "NO_VECTOR"
+  },
+  {
+    "service_id": 13,
+    "service": "Digital Logo & Wordmark",
+    "tier": 2,
+    "name": "The Identity Pair",
+    "scope": "Digital-only wordmark + simple symbol concept",
+    "starting_from": {
+      "international_usd": 335,
+      "egypt_egp": 10100,
+      "lebanon_usd": 290
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s13_p01",
+    "scope_notes": "One chosen direction, variations in supported digital formats",
+    "exclusions": "Vector masters, trademark eligibility, unrestricted third-party rights",
+    "gate": "NO_VECTOR"
+  },
+  {
+    "service_id": 13,
+    "service": "Digital Logo & Wordmark",
+    "tier": 3,
+    "name": "The Logo Suite",
+    "scope": "Digital-only identity with approved variations",
+    "starting_from": {
+      "international_usd": 455,
+      "egypt_egp": 13600,
+      "lebanon_usd": 390
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s13_p01",
+    "scope_notes": "One chosen direction, variations in supported digital formats",
+    "exclusions": "Vector masters, trademark eligibility, unrestricted third-party rights",
+    "gate": "NO_VECTOR"
+  },
+  {
+    "service_id": 14,
+    "service": "Brand Style Guide",
+    "tier": 1,
+    "name": "The Mini Guide",
+    "scope": "5–8 page guide from an existing identity",
+    "starting_from": {
+      "international_usd": 110,
+      "egypt_egp": 3300,
+      "lebanon_usd": 95
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s14_p01",
+    "scope_notes": "Organize existing approved logo, colors, typography and use",
+    "exclusions": "New identity, packaging, print-production systems",
+    "gate": ""
+  },
+  {
+    "service_id": 14,
+    "service": "Brand Style Guide",
+    "tier": 2,
+    "name": "The Guide",
+    "scope": "Up to 12-page guide from an existing identity",
+    "starting_from": {
+      "international_usd": 180,
+      "egypt_egp": 5400,
+      "lebanon_usd": 155
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s14_p01",
+    "scope_notes": "Organize existing approved logo, colors, typography and use",
+    "exclusions": "New identity, packaging, print-production systems",
+    "gate": ""
+  },
+  {
+    "service_id": 14,
+    "service": "Brand Style Guide",
+    "tier": 3,
+    "name": "The Extended Guide",
+    "scope": "Up to 18-page guide from an existing identity",
+    "starting_from": {
+      "international_usd": 265,
+      "egypt_egp": 8000,
+      "lebanon_usd": 230
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s14_p01",
+    "scope_notes": "Organize existing approved logo, colors, typography and use",
+    "exclusions": "New identity, packaging, print-production systems",
+    "gate": ""
+  },
+  {
+    "service_id": 15,
+    "service": "Presentation Design",
+    "tier": 1,
+    "name": "The Deck",
+    "scope": "Up to 10 standard slides",
+    "starting_from": {
+      "international_usd": 150,
+      "egypt_egp": 4500,
+      "lebanon_usd": 130
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s15_p01",
+    "scope_notes": "Design from client-approved content and assets",
+    "exclusions": "Research, complex charts, advanced animation",
+    "gate": ""
+  },
+  {
+    "service_id": 15,
+    "service": "Presentation Design",
+    "tier": 2,
+    "name": "The Presentation",
+    "scope": "Up to 20 coordinated slides",
+    "starting_from": {
+      "international_usd": 280,
+      "egypt_egp": 8300,
+      "lebanon_usd": 240
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s15_p01",
+    "scope_notes": "Design from client-approved content and assets",
+    "exclusions": "Research, complex charts, advanced animation",
+    "gate": ""
+  },
+  {
+    "service_id": 15,
+    "service": "Presentation Design",
+    "tier": 3,
+    "name": "The Full Deck",
+    "scope": "Up to 35 coordinated slides",
+    "starting_from": {
+      "international_usd": 460,
+      "egypt_egp": 13800,
+      "lebanon_usd": 400
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s15_p01",
+    "scope_notes": "Design from client-approved content and assets",
+    "exclusions": "Research, complex charts, advanced animation",
+    "gate": ""
+  },
+  {
+    "service_id": 16,
+    "service": "Landing-page Website",
+    "tier": 1,
+    "name": "The Landing",
+    "scope": "1 page, up to 6 sections",
+    "starting_from": {
+      "international_usd": 350,
+      "egypt_egp": 10000,
+      "lebanon_usd": 320
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s16_p01",
+    "scope_notes": "Responsive layout, supplied content, basic metadata, standard checks",
+    "exclusions": "Original copy, complex integrations, third-party costs",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 16,
+    "service": "Landing-page Website",
+    "tier": 2,
+    "name": "The Extended Landing",
+    "scope": "1 page, up to 9 sections",
+    "starting_from": {
+      "international_usd": 490,
+      "egypt_egp": 14000,
+      "lebanon_usd": 450
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s16_p01",
+    "scope_notes": "Responsive layout, supplied content, basic metadata, standard checks",
+    "exclusions": "Original copy, complex integrations, third-party costs",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 16,
+    "service": "Landing-page Website",
+    "tier": 3,
+    "name": "The Launch Page",
+    "scope": "1 page, up to 12 sections and a standard form",
+    "starting_from": {
+      "international_usd": 650,
+      "egypt_egp": 18500,
+      "lebanon_usd": 595
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s16_p01",
+    "scope_notes": "Responsive layout, supplied content, basic metadata, standard checks",
+    "exclusions": "Original copy, complex integrations, third-party costs",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 17,
+    "service": "Portfolio Website",
+    "tier": 1,
+    "name": "The Portfolio",
+    "scope": "Up to 4 standard pages",
+    "starting_from": {
+      "international_usd": 600,
+      "egypt_egp": 18000,
+      "lebanon_usd": 530
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s17_p01",
+    "scope_notes": "Responsive 4-page personal/pro portfolio from approved assets",
+    "exclusions": "Case-study writing, complex CMS or advanced filtering",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 17,
+    "service": "Portfolio Website",
+    "tier": 2,
+    "name": "The Portfolio Plus",
+    "scope": "Up to 6 standard pages",
+    "starting_from": {
+      "international_usd": 830,
+      "egypt_egp": 24900,
+      "lebanon_usd": 735
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s17_p01",
+    "scope_notes": "Responsive 4-page personal/pro portfolio from approved assets",
+    "exclusions": "Case-study writing, complex CMS or advanced filtering",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 17,
+    "service": "Portfolio Website",
+    "tier": 3,
+    "name": "The Portfolio Studio",
+    "scope": "Up to 9 standard pages",
+    "starting_from": {
+      "international_usd": 1105,
+      "egypt_egp": 33200,
+      "lebanon_usd": 980
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s17_p01",
+    "scope_notes": "Responsive 4-page personal/pro portfolio from approved assets",
+    "exclusions": "Case-study writing, complex CMS or advanced filtering",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 18,
+    "service": "Business Website",
+    "tier": 1,
+    "name": "The Business Site",
+    "scope": "Up to 5 standard pages",
+    "starting_from": {
+      "international_usd": 850,
+      "egypt_egp": 25000,
+      "lebanon_usd": 750
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s18_p01",
+    "scope_notes": "Responsive informational site, standard contact if supported",
+    "exclusions": "Custom backend, advanced integration, legal copy",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 18,
+    "service": "Business Website",
+    "tier": 2,
+    "name": "The Business Plus",
+    "scope": "Up to 8 standard pages",
+    "starting_from": {
+      "international_usd": 1210,
+      "egypt_egp": 35500,
+      "lebanon_usd": 1065
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s18_p01",
+    "scope_notes": "Responsive informational site, standard contact if supported",
+    "exclusions": "Custom backend, advanced integration, legal copy",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 18,
+    "service": "Business Website",
+    "tier": 3,
+    "name": "The Expanded Site",
+    "scope": "Up to 12 standard pages",
+    "starting_from": {
+      "international_usd": 1660,
+      "egypt_egp": 48800,
+      "lebanon_usd": 1465
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s18_p01",
+    "scope_notes": "Responsive informational site, standard contact if supported",
+    "exclusions": "Custom backend, advanced integration, legal copy",
+    "gate": "PLATFORM_CHECK"
+  },
+  {
+    "service_id": 19,
+    "service": "E-commerce Website",
+    "tier": 1,
+    "name": "The Storefront Review",
+    "scope": "Store requirements and platform feasibility assessment",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s19_p01",
+    "scope_notes": "Candidate: <=5 simple products, compatible hosted store; verified checkout",
+    "exclusions": "Custom gateway, complex tax, shipping or inventory",
+    "gate": "CUSTOM_ONLY_UNVERIFIED"
+  },
+  {
+    "service_id": 19,
+    "service": "E-commerce Website",
+    "tier": 2,
+    "name": "The Storefront Setup",
+    "scope": "Small hosted storefront setup, subject to verification",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s19_p01",
+    "scope_notes": "Candidate: <=5 simple products, compatible hosted store; verified checkout",
+    "exclusions": "Custom gateway, complex tax, shipping or inventory",
+    "gate": "CUSTOM_ONLY_UNVERIFIED"
+  },
+  {
+    "service_id": 19,
+    "service": "E-commerce Website",
+    "tier": 3,
+    "name": "The Storefront Plus",
+    "scope": "Larger hosted storefront, subject to verification",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s19_p01",
+    "scope_notes": "Candidate: <=5 simple products, compatible hosted store; verified checkout",
+    "exclusions": "Custom gateway, complex tax, shipping or inventory",
+    "gate": "CUSTOM_ONLY_UNVERIFIED"
+  },
+  {
+    "service_id": 20,
+    "service": "Additional Website Pages",
+    "tier": 1,
+    "name": "The Page Pair",
+    "scope": "2 simple extra pages within an existing project",
+    "starting_from": {
+      "international_usd": 185,
+      "egypt_egp": 5600,
+      "lebanon_usd": 170
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s20_p01",
+    "scope_notes": "New URL within agreed existing design system",
+    "exclusions": "New complex components, separate copywriting",
+    "gate": "CONTEXT_REQUIRED"
+  },
+  {
+    "service_id": 20,
+    "service": "Additional Website Pages",
+    "tier": 2,
+    "name": "The Page Set",
+    "scope": "3 simple extra pages within an existing project",
+    "starting_from": {
+      "international_usd": 270,
+      "egypt_egp": 8100,
+      "lebanon_usd": 245
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s20_p01",
+    "scope_notes": "New URL within agreed existing design system",
+    "exclusions": "New complex components, separate copywriting",
+    "gate": "CONTEXT_REQUIRED"
+  },
+  {
+    "service_id": 20,
+    "service": "Additional Website Pages",
+    "tier": 3,
+    "name": "The Expansion",
+    "scope": "5 simple extra pages within an existing project",
+    "starting_from": {
+      "international_usd": 430,
+      "egypt_egp": 13000,
+      "lebanon_usd": 395
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s20_p01",
+    "scope_notes": "New URL within agreed existing design system",
+    "exclusions": "New complex components, separate copywriting",
+    "gate": "CONTEXT_REQUIRED"
+  },
+  {
+    "service_id": 21,
+    "service": "Website Updates & Maintenance",
+    "tier": 1,
+    "name": "The Fixes",
+    "scope": "2 hours of scoped updates",
+    "starting_from": {
+      "international_usd": 60,
+      "egypt_egp": 1800,
+      "lebanon_usd": 60
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s21_p01",
+    "scope_notes": "Agreed simple updates on supported platform",
+    "exclusions": "Emergency security, server admin, specialist fixes",
+    "gate": "EXISTING_SITE_REVIEW"
+  },
+  {
+    "service_id": 21,
+    "service": "Website Updates & Maintenance",
+    "tier": 2,
+    "name": "The Refresh",
+    "scope": "5 hours of scoped updates",
+    "starting_from": {
+      "international_usd": 140,
+      "egypt_egp": 4200,
+      "lebanon_usd": 130
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s21_p01",
+    "scope_notes": "Agreed simple updates on supported platform",
+    "exclusions": "Emergency security, server admin, specialist fixes",
+    "gate": "EXISTING_SITE_REVIEW"
+  },
+  {
+    "service_id": 21,
+    "service": "Website Updates & Maintenance",
+    "tier": 3,
+    "name": "The Maintenance Block",
+    "scope": "10 hours of scoped updates",
+    "starting_from": {
+      "international_usd": 255,
+      "egypt_egp": 7700,
+      "lebanon_usd": 240
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s21_p01",
+    "scope_notes": "Agreed simple updates on supported platform",
+    "exclusions": "Emergency security, server admin, specialist fixes",
+    "gate": "EXISTING_SITE_REVIEW"
+  },
+  {
+    "service_id": 22,
+    "service": "Additional Revision Work",
+    "tier": 1,
+    "name": "The Small Fix Block",
+    "scope": "2 hours of minor edits, approved existing project",
+    "starting_from": {
+      "international_usd": 40,
+      "egypt_egp": null,
+      "lebanon_usd": 40
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s22_p01",
+    "scope_notes": "Incremental approved out-of-allowance work",
+    "exclusions": "Errors caused by failure to meet agreed brief",
+    "gate": "ATTACH_EXISTING_PROJECT"
+  },
+  {
+    "service_id": 22,
+    "service": "Additional Revision Work",
+    "tier": 2,
+    "name": "The Revision Block",
+    "scope": "4 hours of minor edits, approved existing project",
+    "starting_from": {
+      "international_usd": 75,
+      "egypt_egp": null,
+      "lebanon_usd": 75
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s22_p01",
+    "scope_notes": "Incremental approved out-of-allowance work",
+    "exclusions": "Errors caused by failure to meet agreed brief",
+    "gate": "ATTACH_EXISTING_PROJECT"
+  },
+  {
+    "service_id": 22,
+    "service": "Additional Revision Work",
+    "tier": 3,
+    "name": "The Extended Revisions",
+    "scope": "8 hours of minor edits, approved existing project",
+    "starting_from": {
+      "international_usd": 145,
+      "egypt_egp": null,
+      "lebanon_usd": 145
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s22_p01",
+    "scope_notes": "Incremental approved out-of-allowance work",
+    "exclusions": "Errors caused by failure to meet agreed brief",
+    "gate": "ATTACH_EXISTING_PROJECT"
+  },
+  {
+    "service_id": 23,
+    "service": "Custom Multi-service Projects",
+    "tier": 1,
+    "name": "The Project Brief",
+    "scope": "Defined small cross-service project",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s23_p01",
+    "scope_notes": "Individually scoped combined project with shared-work savings",
+    "exclusions": "Blanket minimum for small standalone items",
+    "gate": "CUSTOM_ONLY"
+  },
+  {
+    "service_id": 23,
+    "service": "Custom Multi-service Projects",
+    "tier": 2,
+    "name": "The Project Build",
+    "scope": "Coordinated medium cross-service project",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s23_p01",
+    "scope_notes": "Individually scoped combined project with shared-work savings",
+    "exclusions": "Blanket minimum for small standalone items",
+    "gate": "CUSTOM_ONLY"
+  },
+  {
+    "service_id": 23,
+    "service": "Custom Multi-service Projects",
+    "tier": 3,
+    "name": "The Project Partnership",
+    "scope": "Larger multi-deliverable project",
+    "starting_from": {
+      "international_usd": null,
+      "egypt_egp": null,
+      "lebanon_usd": null
+    },
+    "status": "CUSTOM_QUOTE_ONLY",
+    "reference_package_id": "s23_p01",
+    "scope_notes": "Individually scoped combined project with shared-work savings",
+    "exclusions": "Blanket minimum for small standalone items",
+    "gate": "CUSTOM_ONLY"
+  },
+  {
+    "service_id": 24,
+    "service": "UGC Creation",
+    "tier": 1,
+    "name": "The UGC Duo",
+    "scope": "2 coordinated edited 16–30 sec UGC videos",
+    "starting_from": {
+      "international_usd": 270,
+      "egypt_egp": 7800,
+      "lebanon_usd": 265
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s24_p01",
+    "scope_notes": "One filmed edited video from approved client script, one agreed format",
+    "exclusions": "Personal posting, paid ads, raw footage, original script",
+    "gate": "LICENSE_REQUIRED"
+  },
+  {
+    "service_id": 24,
+    "service": "UGC Creation",
+    "tier": 2,
+    "name": "The UGC Trio",
+    "scope": "3 coordinated edited 16–30 sec UGC videos",
+    "starting_from": {
+      "international_usd": 390,
+      "egypt_egp": 11500,
+      "lebanon_usd": 365
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s24_p01",
+    "scope_notes": "One filmed edited video from approved client script, one agreed format",
+    "exclusions": "Personal posting, paid ads, raw footage, original script",
+    "gate": "LICENSE_REQUIRED"
+  },
+  {
+    "service_id": 24,
+    "service": "UGC Creation",
+    "tier": 3,
+    "name": "The UGC Collection",
+    "scope": "5 coordinated edited 16–30 sec UGC videos",
+    "starting_from": {
+      "international_usd": 635,
+      "egypt_egp": 18700,
+      "lebanon_usd": 595
+    },
+    "status": "PROPOSED_NEW_BUNDLE_PRICE",
+    "reference_package_id": "s24_p01",
+    "scope_notes": "One filmed edited video from approved client script, one agreed format",
+    "exclusions": "Personal posting, paid ads, raw footage, original script",
+    "gate": "LICENSE_REQUIRED"
+  }
+]
