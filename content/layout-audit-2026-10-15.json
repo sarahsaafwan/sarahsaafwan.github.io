@@ -1,0 +1,1314 @@
+{
+  "browser": "Playwright Chromium",
+  "viewports": [
+    375,
+    390,
+    430,
+    768,
+    820,
+    1024,
+    1280,
+    1440,
+    1920
+  ],
+  "public_routes": 64,
+  "route_viewport_checks": 576,
+  "additional_interaction_layout_states": 450,
+  "screenshots_captured": 576,
+  "routes": [
+    {
+      "route": "404.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "approach.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "availability.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "brief.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "build-brief.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "calculator.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-advertising-research.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-beetle-club.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-bellabelles-egypt.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-moving-truck.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-rhode.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-substack.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-the-sae-talk.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "case-thy-academia.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "checklist.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "collaborate.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "compare.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "confirmation.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "contact.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "cv.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "experience.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "faq.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "feedback.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "guide.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "index.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "journey.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "privacy.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "recruiters.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "samples.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-1.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-10.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-11.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-12.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-13.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-14.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-15.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-16.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-17.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-18.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-19.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-2.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-20.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-21.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-22.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-23.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-24.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-3.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-4.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-5.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-6.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-7.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-8.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "service-9.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "services.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "start.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "terms.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "transformations.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "website-business.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "website-landing.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "website-portfolio.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "website-shop.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "websites.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "work.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "writing.html",
+      "coverage": "public portfolio route",
+      "viewports": {
+        "375": "passed",
+        "390": "passed",
+        "430": "passed",
+        "768": "passed",
+        "820": "passed",
+        "1024": "passed",
+        "1280": "passed",
+        "1440": "passed",
+        "1920": "passed"
+      },
+      "initial_and_expanded_states": "passed",
+      "runtime_errors": 0,
+      "horizontal_overflow": false,
+      "detected_border_text_intersections": 0,
+      "detected_clipped_text": 0
+    },
+    {
+      "route": "enquiries.html",
+      "coverage": "owner-only redirect",
+      "redirect_verified": true,
+      "target": "https://sarah-safwan-portfolio.alaa-saf92.chatgpt.site/enquiries.html",
+      "authenticated_backend_interface_audited": false
+    },
+    {
+      "route": "feedback-review.html",
+      "coverage": "owner-only redirect",
+      "redirect_verified": true,
+      "target": "https://sarah-safwan-portfolio.alaa-saf92.chatgpt.site/feedback-review.html",
+      "authenticated_backend_interface_audited": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+/* Shared editorial components: content and rules each keep their own space. */
+.actions{align-items:flex-start;gap:24px 28px}
+.actions>.link-arrow,.actions>.profile-link{align-self:flex-start}
+.link-arrow,.profile-link{max-width:100%;min-width:0;line-height:1.65;white-space:normal;overflow-wrap:anywhere;padding-bottom:11px}
+.link-arrow>span,.profile-link>span{flex-shrink:0}
+.actions+.section,.actions+.depth-section{margin-top:40px}
+.section-head{align-items:flex-start;column-gap:28px;row-gap:24px}
+.section-head>*{min-width:0;max-width:100%}
+.section-head .link-arrow{white-space:normal;line-height:1.65;flex-shrink:0}
+/* Cover artwork stays visible around, rather than through, editorial lettering. */
+.cover{isolation:isolate;min-height:min-content;height:auto}
+.cover::before,.cover::after{pointer-events:none;user-select:none;z-index:-1}
+.cover .cover-title,.cover .cover-brand,.cover .cover-foot{background:inherit;position:relative;z-index:0}
+.cover .cover-title{line-height:1.04;padding-block:5px;max-width:100%}
+.cover .cover-brand,.cover .cover-foot{width:fit-content;max-width:100%}
+/* Flex and grid children can shrink while their text grows vertically. */
+.resource-grid>*,.sample-grid>*,.website-service-grid>*,.service-row>*,.timeline-row>*,.contact-grid>*,.calc-layout>*{min-width:0}
+.resource-body .resource-grid>article+article,.resource-body .sample-grid>article+article{margin-top:0}
+.resource-card h2{font-size:clamp(28px,3vw,40px);line-height:1.2;letter-spacing:-.02em;overflow-wrap:normal}
+.sample-grid .table-scroll table{min-width:0;table-layout:fixed;font-size:13px;overflow-wrap:anywhere}
+.sample-grid .table-scroll th,.sample-grid .table-scroll td{padding:14px 8px}
+.table-scroll{max-width:100%;isolation:isolate}
+.resource-body dd,.resource-card p,.website-service-card p{overflow-wrap:anywhere}
+/* Borders remain outside text and touch targets when labels wrap. */
+.button,.card-button,.text-button{max-width:100%;height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.6}
+.button,.card-button{min-height:44px}
+.footer-extras details{min-width:0;flex-basis:180px}.footer-extras summary{line-height:1.6;min-height:48px}
+.footer-extras details>div{padding:18px 5px 8px;gap:20px}
+.faq-list summary{line-height:1.35;padding-block:4px}
+.form label{line-height:1.6}.form input,.form select,.form textarea{max-width:100%;line-height:1.6}
+.form input:not([type=checkbox]):not([type=radio]),.form select{min-height:48px}
+.form textarea{height:auto}
+main [id]{scroll-margin-top:32px}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline-offset:5px}
+.brand-burgundy a:focus-visible,.brand-olive a:focus-visible,.cta a:focus-visible{outline-color:#fff}
+@media(max-width:540px){.section-head .link-arrow{font-size:13px;max-width:100%}.actions+.section,.actions+.depth-section{margin-top:32px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
