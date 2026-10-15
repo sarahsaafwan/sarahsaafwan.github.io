@@ -146,9 +146,9 @@ def global_dom(main,route):
   if p:p.clear();p.append(FEEDBACK)
  for a in main.select('.card-button'):a.clear();a.append('Read the full project ↗')
  for a in main.select('a[href]'):
+  label=a.get_text(' ',strip=True)
+  if label.replace('↗','').strip()=='Discuss this scope':a.clear();a.append('Enquire about this package ↗')
   if a.get('href')=='calculator.html':
-   label=a.get_text(' ',strip=True)
-   if label.replace('↗','').strip()=='Discuss this scope':a.clear();a.append('Enquire about this package ↗')
    if re.search(r'estimate|calculator|services\s*&\s*packages',label,re.I):
     a.clear();a.append('Packages' if label.lower().replace('↗','').strip() in ['calculator','services & packages','rate calculator'] else 'Browse packages ↗')
  # Supporting prose: replace obsolete UI references while retaining factual/legal scope.
