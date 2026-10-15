@@ -190,6 +190,7 @@ for f in sorted(ROOT.glob('*.html')):
  if 'copy-presentation.js' not in text:text=text.replace('</head>','<script src="copy-presentation.js" defer></script></head>')
  # Never leave an em dash in HTML text, ARIA labels, metadata, or inline content.
  text=normalize(text)
+ text=re.sub(r'(<script\b[^>]*\bsrc=")([^"]+)(")',lambda m:m[0] if m[2].startswith(('https://','http://')) else m[1]+m[2].split('?')[0]+'?v=depth-20261015'+m[3],text)
  f.write_text(text)
  AUDIT.append({'route':f.name,'status':status,'words':len(soup(body).get_text(' ',strip=True).split())})
 (ROOT/'content/depth-copy.json').write_text(json.dumps(COPY,ensure_ascii=False,indent=2))
