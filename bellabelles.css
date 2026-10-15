@@ -1,0 +1,21 @@
+/* Scope gallery styling to the existing BellaBelles case study. */
+.bella-case figure{margin:0;min-width:0}.bella-case img{display:block;width:100%;height:auto;max-width:100%}
+.bella-facts{display:grid;grid-template-columns:1fr 1fr 1.7fr;gap:28px;border-top:1px solid #B48A60;padding-top:26px;margin:34px 0 0}
+.bella-facts dt{font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}.bella-facts dd{margin:0;line-height:1.7}
+.bella-feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,80px);align-items:center;border-top:1px solid #B48A60}
+.bella-case h2{font:400 clamp(34px,4vw,58px)/1.12 var(--serif);margin:20px 0}.bella-section-copy .lead{max-width:460px}
+.bella-carousel{min-width:0;width:100%;max-width:520px;margin-inline:auto;touch-action:pan-y}
+.bella-slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;overscroll-behavior-x:contain}
+.bella-slide{flex:0 0 100%;scroll-snap-align:start}.bella-slide img{aspect-ratio:1229/1536;object-fit:contain}
+.bella-carousel.bella-enhanced .bella-slides{display:block;overflow:visible;scroll-snap-type:none}.bella-carousel .bella-slide[hidden]{display:none!important}
+.bella-carousel-controls{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:20px}.bella-carousel-controls[hidden]{display:none}
+.bella-carousel-controls button{font:12px var(--sans);min-height:46px;padding:10px 15px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer}
+.bella-carousel-controls button:hover{background:var(--accent);color:var(--paper)}.bella-carousel-controls button:disabled{opacity:.4;cursor:default}.bella-slide-count{font-size:12px;white-space:nowrap}
+.bella-carousel:focus-visible{outline:2px solid var(--accent);outline-offset:8px}.bella-swipe-hint{font-size:12px;line-height:1.6;margin-top:14px}
+.bella-static figure{width:100%;max-width:430px;margin-inline:auto}.bella-case figcaption{font-size:13px;line-height:1.7;margin-top:16px}
+.bella-case figcaption h3{font:400 27px/1.2 var(--serif);margin:16px 0 10px}.bella-case figcaption p{margin:10px 0}.bella-case figcaption .link-arrow{font-size:12px}
+.bella-videos{border-top:1px solid #B48A60}.bella-video-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px;align-items:start;margin-top:36px}
+.bella-video-grid video{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;background:var(--cream)}
+.bella-project-links{display:flex;flex-wrap:wrap;gap:22px 36px;border-top:1px solid #B48A60}
+@media(max-width:1000px){.bella-video-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bella-feature{gap:28px}.bella-facts{grid-template-columns:1fr 1fr}.bella-facts>div:last-child{grid-column:1/-1}}
+@media(max-width:700px){.bella-feature{grid-template-columns:minmax(0,1fr)}.bella-facts{grid-template-columns:1fr}.bella-facts>div:last-child{grid-column:auto}.bella-video-grid{grid-template-columns:minmax(0,1fr);gap:42px;max-width:430px;margin-inline:auto}.bella-carousel-controls{gap:10px}.bella-carousel-controls button{padding-inline:12px}.bella-case h2{font-size:38px}}
