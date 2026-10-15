@@ -101,3 +101,6 @@
 /* One motion owner: JS reveals and exit; never a second browser entrance. */
 @view-transition{navigation:none}
 html.motion-boot main{visibility:hidden}
+
+/* Bellabelles selected-project gallery */
+.bella-media-gallery{margin:2rem 0 4rem}.bella-media-gallery h3{margin:2rem 0 1rem}.bella-carousel{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:15px}.bella-carousel .bella-figure{flex:0 0 min(70vw,360px);scroll-snap-align:start}.bella-figure{margin:0}.bella-figure img{display:block;width:100%;height:auto;object-fit:contain;border-radius:4px}.bella-media-gallery figcaption{font-size:.83rem;margin-top:9px;opacity:.75}.bella-still{max-width:460px}.bella-video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:20px}.bella-video-grid figure{margin:0}.bella-video-grid video{display:block;width:100%;max-height:600px;background:#111;object-fit:contain}@media(max-width:600px){.bella-carousel .bella-figure{flex-basis:84vw}}
