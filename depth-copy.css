@@ -32,3 +32,11 @@
 @media(max-width:1000px){.depth-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cover.rhode .cover-title{font-size:clamp(38px,5vw,55px)}}
 @media(max-width:700px){.depth-opening-grid{grid-template-columns:minmax(0,1fr)}.depth-opening-portrait{grid-row:1}.depth-opening-grid .depth-opening-portrait{max-width:360px}.depth-page .depth-opening-actions{margin-bottom:42px}}
 @media(max-width:540px){.depth-project-grid{grid-template-columns:minmax(0,1fr)}.cover.rhode .cover-title{font-size:clamp(40px,10vw,55px)}}
+/* Restore the portfolio's established burgundy and olive brand sections. */
+.depth-page .depth-section.brand-burgundy,.depth-page .depth-section.brand-olive{position:relative;color:#fff;border-top:0;margin-block:56px;padding-block:64px;clip-path:inset(0 -100vmax)}
+.depth-page .brand-burgundy{background:#6A1F2B;box-shadow:0 0 0 100vmax #6A1F2B}
+.depth-page .brand-olive{background:#5F5C3B;box-shadow:0 0 0 100vmax #5F5C3B}
+.depth-page .brand-burgundy .link-arrow,.depth-page .brand-olive .link-arrow{border-color:currentColor;padding-bottom:12px}
+.depth-page .brand-burgundy h2,.depth-page .brand-olive h2{color:#fff}
+.depth-page .brand-burgundy .actions,.depth-page .brand-olive .actions{margin-top:32px;gap:24px 32px}
+@media(max-width:540px){.depth-page .depth-section.brand-burgundy,.depth-page .depth-section.brand-olive{margin-block:40px;padding-block:48px}}

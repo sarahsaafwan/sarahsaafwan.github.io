@@ -44,6 +44,12 @@ if resources:
  links=[link(a['href'],a.find('h3').get_text(' ',strip=True) if a.find('h3') else a.get_text(' ',strip=True).replace('↗','')) for a in resources.select('a[href]')]
  res=section('More about working together','',actions(*links))
 PAGES['index.html']=wrapper(home)+str(feedback)+wrapper(res+homeclose)
+_home=soup(PAGES['index.html'])
+for _section in _home.select('.depth-section'):
+ _heading=_section.find('h2')
+ if _heading and _heading.get_text(strip=True)=='Have something in mind?':_section['class']+=['brand-burgundy']
+ if _heading and _heading.get_text(strip=True)=='I learned by starting things.':_section['class']+=['brand-olive']
+PAGES['index.html']=str(_home)
 # Work: preserve filters and existing covers, while replacing every supplied project description.
 d=COPY['work.html'];filters=oldwork.select_one('.filters');facets=oldwork.select_one('.portfolio-facets');count=oldwork.select_one('#work-count')
 work=header(d)+actions(link('assets/Sarah_Safwan_Portfolio_2026.pdf','Download portfolio PDF'))+'<section class="section depth-work">'+str(filters)+str(facets)+str(count)+'<p id="work-empty" role="status" hidden>Nothing matches those filters yet. Try another category or view all projects.</p><div class="grid work-grid" id="project-grid">'+''.join(card(slug,text) for slug,text in WORK_CARDS.items())+'</div></section>'
