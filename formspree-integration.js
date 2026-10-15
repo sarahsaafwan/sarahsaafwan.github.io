@@ -32,7 +32,7 @@
           const target=isProject?'https://formspree.io/f/xaeqlrea':endpoint;
           const response=await fetch(target,{method:'POST',body:fields,headers:{'Accept':'application/json'}});
           if(!response.ok){const data=await response.json().catch(()=>({}));throw new Error(data.errors?.map(x=>x.message).join(' ')||'Your message could not be sent. Please try again.');}
-          status.textContent=id==='feedback-form'?'Thank you for sharing your feedback.':'Thank you for getting in touch. Your message has been sent.';
+          status.textContent=id==='feedback-form'?'Thank you for sharing your feedback.':'Thanks, your enquiry has been submitted. I’ll review the details and follow up through the contact information you provided.';
           form.reset();
         } catch (error) { status.textContent=error.message||'Submission failed. Please try again.'; }
         finally {if(button)button.disabled=false;}

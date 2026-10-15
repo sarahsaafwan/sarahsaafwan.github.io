@@ -1,0 +1,396 @@
+[
+  {
+    "route": "404.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 64,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "approach.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 86,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "availability.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 95,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "brief.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 187,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "build-brief.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 138,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "calculator.html",
+    "status": "Full supplied copy implemented",
+    "words": 236,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-advertising-research.html",
+    "status": "Full supplied copy implemented",
+    "words": 503,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-beetle-club.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 6,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-bellabelles-egypt.html",
+    "status": "Full supplied copy implemented",
+    "words": 978,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-moving-truck.html",
+    "status": "Full supplied copy implemented",
+    "words": 643,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-rhode.html",
+    "status": "Supplied opening and summary implemented; detailed strategic sections preserved",
+    "words": 1804,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-substack.html",
+    "status": "Full supplied copy implemented",
+    "words": 460,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-the-sae-talk.html",
+    "status": "Full supplied copy implemented",
+    "words": 486,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "case-thy-academia.html",
+    "status": "Full supplied copy implemented",
+    "words": 633,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "checklist.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 158,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "collaborate.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 78,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "compare.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 196,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "confirmation.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 69,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "contact.html",
+    "status": "Full supplied copy implemented",
+    "words": 348,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "cv.html",
+    "status": "Supplied introduction implemented; verified details preserved",
+    "words": 195,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "experience.html",
+    "status": "Full supplied copy implemented",
+    "words": 807,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "faq.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 268,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "feedback.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 615,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "guide.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 86,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "index.html",
+    "status": "Full supplied copy implemented",
+    "words": 1153,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "journey.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 198,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "privacy.html",
+    "status": "Browser-storage description updated for package enquiries; other legal content preserved.",
+    "words": 298,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "recruiters.html",
+    "status": "Introduction refined and global consistency fixes applied; verified role details preserved.",
+    "words": 219,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "samples.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 199,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-1.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 360,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-10.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 206,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-11.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 207,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-12.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 203,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-13.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 209,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-14.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 207,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-15.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 203,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-16.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 211,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-17.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 217,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-18.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 215,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-19.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 220,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-2.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 250,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-20.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 206,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-21.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 221,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-22.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 436,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-23.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 202,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-24.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 812,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-3.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 346,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-4.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 247,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-5.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 342,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-6.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 249,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-7.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 206,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-8.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 209,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "service-9.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 301,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "services.html",
+    "status": "Full supplied copy implemented",
+    "words": 1262,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "start.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 112,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "terms.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 530,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "transformations.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 169,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "website-business.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 254,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "website-landing.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 250,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "website-portfolio.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 256,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "website-shop.html",
+    "status": "Service overview rewritten; existing approved scope, tier records, and terms preserved. Full package-detail rewrite not performed.",
+    "words": 259,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "websites.html",
+    "status": "Consistency audit only; detailed rewrite not supplied",
+    "words": 81,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "work.html",
+    "status": "Full supplied copy implemented",
+    "words": 619,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "writing.html",
+    "status": "Full supplied copy implemented",
+    "words": 536,
+    "browser_review": "Desktop 1440px and mobile 390px passed"
+  },
+  {
+    "route": "enquiries.html",
+    "status": "Existing redirect/access-routing page preserved; no substantive body rewrite.",
+    "browser_review": "Routing source inspected; private destination not authenticated."
+  },
+  {
+    "route": "feedback-review.html",
+    "status": "Existing redirect/access-routing page preserved; no substantive body rewrite.",
+    "browser_review": "Routing source inspected; private destination not authenticated."
+  }
+]

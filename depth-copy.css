@@ -1,0 +1,25 @@
+/* Long-form copy follows the established portfolio type, colours and spacing. */
+.depth-page .depth-hero{padding-bottom:48px}.depth-page .depth-hero h1{max-width:1050px;font-size:clamp(43px,6vw,86px);line-height:1.12;letter-spacing:-.025em}
+.depth-page .depth-subtitle{max-width:820px;margin-top:26px}.depth-prose{max-width:760px;font:clamp(21px,1.65vw,24px)/1.65 var(--body);overflow-wrap:break-word}
+.depth-prose p{margin:0 0 1.25em}.depth-prose p:last-child{margin-bottom:0}.depth-page .depth-section{padding:58px 0;border-top:1px solid #B48A60}
+.depth-page .depth-section h2{font:400 clamp(32px,3.2vw,48px)/1.18 var(--serif);letter-spacing:-.02em;max-width:900px;margin:0 0 30px}
+.depth-page .depth-section>.eyebrow{margin-bottom:20px}.depth-short-line{font:15px/1.7 var(--sans);margin-top:0;max-width:760px}
+.depth-page .depth-project-grid{margin-top:42px}.depth-page .card p{font:18px/1.65 var(--body)}.depth-page .card{height:auto}
+.depth-portrait{max-width:440px;margin:35px 0}.depth-portrait img{width:100%;height:auto;display:block}.depth-portrait figure{margin:0}
+.depth-media-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(30px,5vw,70px);align-items:start}
+.depth-media-row>*{min-width:0}.depth-page .bella-carousel{width:100%;max-width:520px;margin:0 auto}.depth-static{max-width:430px;margin-inline:auto}
+.depth-page .depth-video-sections{display:block;max-width:none;margin:0}.depth-video-sections figure{max-width:360px;width:100%;margin-inline:auto}
+.depth-video-sections video{width:100%;height:auto}.depth-video-sections .depth-media-row{grid-template-columns:minmax(0,1.4fr) minmax(0,.85fr)}
+.depth-cta-body{font:22px/1.6 var(--body);max-width:620px;margin:24px 0}.cta h2{max-width:820px}.cta .wrap{gap:35px}
+.depth-form-intro{font:20px/1.6 var(--body);max-width:650px;margin:20px 0 30px}.depth-page .enquiry-form h2{font-size:38px}
+#services-packages.depth-page .intro{padding-top:75px}#services-packages.depth-page h1{font:400 clamp(43px,6vw,86px)/1.12 var(--serif);letter-spacing:-.025em;max-width:1100px}
+#services-packages .depth-prose{font:clamp(21px,1.65vw,24px)/1.65 var(--body)}.depth-tier-intro{max-width:760px;font:21px/1.65 var(--body);margin:0 0 30px}
+#services-packages .custom p:not(.eyebrow){max-width:760px}.depth-page .depth-work{padding-top:30px}
+@media(max-width:950px){.depth-media-row,.depth-video-sections .depth-media-row{grid-template-columns:minmax(0,1fr)}.depth-prose{max-width:720px}.depth-page .bella-carousel{margin:15px auto 0}.depth-video-sections figure{max-width:400px}}
+@media(max-width:540px){.depth-page .depth-section{padding:40px 0}.depth-page .depth-hero h1{font-size:43px}.depth-prose{font-size:21px;line-height:1.65}.depth-page .depth-hero{padding-top:45px}.depth-page .card p{font-size:19px}.depth-cta-body{font-size:21px}.depth-form-intro{font-size:21px}#services-packages.depth-page .intro{padding-top:45px}}
+/* Touch-friendly form text without changing field values or pricing records. */
+.form input:not([type=checkbox]):not([type=radio]),.form select,.form textarea{font-size:16px}
+/* Keep contact information in reading order rather than the shared inline link row. */
+.depth-page .contact-grid>.profile-links{display:block}
+.depth-page .contact-grid>.profile-links>.profile-link{display:table;margin-top:18px;margin-bottom:18px}
+.depth-page .contact-grid>.profile-links h2{font:400 clamp(32px,3.2vw,44px)/1.2 var(--serif);margin-top:0}
