@@ -183,6 +183,7 @@ for f in sorted(ROOT.glob('*.html')):
  # The real HTML and its runtime page override must contain the same complete body.
  body=normalize(inner(main));main.clear();[main.append(x) for x in list(soup(body).contents)]
  title=(COPY[f.name]['title']+' | Sarah Safwan') if f.name in COPY else normalize(doc.title.get_text() if doc.title else f.stem+' | Sarah Safwan')
+ if f.name=="index.html":title="Sarah Safwan | Portfolio"
  if doc.title:doc.title.string=title
  if f.name in COPY:
   data=COPY[f.name];description=data['intro'].split('\n\n')[0] or data['sections'][0][1].split('\n\n')[0];description=re.split(r'(?<=[.!?])\s',description)[0]
