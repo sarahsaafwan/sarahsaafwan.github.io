@@ -26,13 +26,17 @@ def trailing(main):return ''.join(str(x) for x in main.select(':scope > .explore
 oldwork=mainof('work.html');cards={x['data-project']:str(x) for x in oldwork.select('.card[data-project]')}
 def card(slug,text):
  node=soup(cards[slug]).select_one('.card');p=node.find('p');p.clear();p.append(text);a=node.select_one('.card-button');a.clear();a.append('Read the full project ');sp=soup('<span aria-hidden="true">↗</span>').span;a.append(sp)
+ if slug=='rhode':
+  node.select_one('.rhode-card-cover').replace_with(soup('<div class="cover rhode" role="img" aria-label="Project cover for Rhode: From Influence to Involvement"><span class="cover-brand">RHODE</span><div class="cover-title">From influence.<br><em>To involvement.</em></div><span class="cover-foot">Independent community concept / 2026</span></div>'))
  return str(node)
 PAGES={}
-# Home: the full personal introduction, four selected projects, and preserved portrait/feedback.
+# Home: the full personal introduction, six selected projects, and preserved portrait/feedback.
 d=COPY['index.html'];old=mainof('index.html');portrait=old.select_one('img[src="assets/sarah-safwan-portrait.jpg"]');portrait=portrait.find_parent('figure') or portrait
-home=header(d)+ '<p class="depth-short-line">Marketing, creative direction, writing, and digital experiences.</p>'+actions(link('work.html','Explore my work'),link('cv.html','View my CV'),link('contact.html','Get in touch'))
+opening=soup(header(d));hero=opening.select_one('header');prose=hero.select_one('.depth-prose');layout=opening.new_tag('div',attrs={'class':'depth-opening-grid'});prose.wrap(layout);layout.append(soup('<div class="depth-portrait depth-opening-portrait">'+str(portrait)+'</div>'))
+home=str(opening)+ '<p class="depth-short-line">Marketing, creative direction, writing, and digital experiences.</p>'+actions(link('work.html','Explore my work'),link('cv.html','View my CV'),link('contact.html','Get in touch'))
+home=home.replace('<div class="actions">','<div class="actions depth-opening-actions">',1)
 parts=d['sections'];home+=section(parts[0][0],parts[0][1],'<div class="grid depth-project-grid">'+''.join(card(slug,text) for slug,text in HOME_CARDS.items())+'</div>','Selected work')
-home+=section(parts[1][0],parts[1][1],'<div class="depth-portrait">'+str(portrait)+'</div>'+actions(link('experience.html','Read about my experience')),'How I got here')
+home+=section(parts[1][0],parts[1][1],actions(link('experience.html','Read about my experience')),'How I got here')
 home+=section(parts[2][0],parts[2][1],actions(link('services.html','Explore services'),link('calculator.html','Browse packages'),link('service-1.html','Social media content design'),link('service-2.html','Carousel and post production'),link('service-3.html','Short-form video editing')),'Services')
 feedback=old.select_one('.feedback-section');homeclose=section(parts[3][0],parts[3][1],actions(link('contact.html','Start a conversation'),link('mailto:sarahsaafwan@gmail.com','Email me')))
 resources=old.select_one('.home-pathways');res=''

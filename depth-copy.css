@@ -23,3 +23,12 @@
 .depth-page .contact-grid>.profile-links{display:block}
 .depth-page .contact-grid>.profile-links>.profile-link{display:table;margin-top:18px;margin-bottom:18px}
 .depth-page .contact-grid>.profile-links h2{font:400 clamp(32px,3.2vw,44px)/1.2 var(--serif);margin-top:0}
+/* Opening portrait, clearly separated actions, and a balanced selected-work grid. */
+.depth-opening-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(0,1fr);gap:clamp(32px,5vw,76px);align-items:start}
+.depth-opening-grid>*{min-width:0}.depth-opening-grid .depth-opening-portrait{margin:0;max-width:440px;width:100%}.depth-opening-portrait img{border-radius:2px}
+.depth-page .depth-opening-actions{margin-top:26px;margin-bottom:56px;gap:24px 32px}.depth-opening-actions .link-arrow{padding-bottom:12px;border-bottom:2px solid #5b5148;line-height:1.6;gap:20px}
+.depth-project-grid{align-items:stretch}.depth-project-grid>.card{display:flex;flex-direction:column;min-width:0}.depth-project-grid>.card>.card-button{align-self:flex-start;margin-top:22px}.depth-project-grid>.card>.profile-links{margin-top:16px}
+.cover.rhode{background:#DDE0DF;color:#343B3B}.cover.rhode:before{content:'';position:absolute;inset:22% -25% auto 45%;width:90%;aspect-ratio:1;border:1px solid #9BA5A2;border-radius:50%}.cover.rhode .cover-title{font-size:clamp(34px,3.8vw,55px)}
+@media(max-width:1000px){.depth-project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.cover.rhode .cover-title{font-size:clamp(38px,5vw,55px)}}
+@media(max-width:700px){.depth-opening-grid{grid-template-columns:minmax(0,1fr)}.depth-opening-portrait{grid-row:1}.depth-opening-grid .depth-opening-portrait{max-width:360px}.depth-page .depth-opening-actions{margin-bottom:42px}}
+@media(max-width:540px){.depth-project-grid{grid-template-columns:minmax(0,1fr)}.cover.rhode .cover-title{font-size:clamp(40px,10vw,55px)}}

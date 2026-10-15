@@ -147,3 +147,7 @@ WORK_CARDS={
 END_CTA=('Want to talk about a project?','If something here is close to what you need, get in touch with a little context. I’m happy to discuss the possibilities and the practical details.')
 FEEDBACK='These are comments from people who listened to the podcast or read my work. Their words are reproduced as submitted, with attribution where available.'
 CV_INTRO='A detailed record of my professional experience, independent projects, education, certifications, and technical skills. The case studies elsewhere on the site show more of the work behind these entries.'
+
+# Six selected projects form two complete desktop rows.
+for slug in ("advertising-research","the-sae-talk"):
+ HOME_CARDS[slug]=WORK_CARDS[slug]
