@@ -28,7 +28,9 @@
         if(button)button.disabled=true;
         status.textContent='Sending your message…';
         try {
-          const response=await fetch(endpoint,{method:'POST',body:fields,headers:{'Accept':'application/json'}});
+          const isProject=id==='contact-form'&&(new URLSearchParams(location.search).get('from')==='packages'||document.getElementById('enquiry-type')?.value==='project');
+          const target=isProject?'https://formspree.io/f/xaeqlrea':endpoint;
+          const response=await fetch(target,{method:'POST',body:fields,headers:{'Accept':'application/json'}});
           if(!response.ok){const data=await response.json().catch(()=>({}));throw new Error(data.errors?.map(x=>x.message).join(' ')||'Your message could not be sent. Please try again.');}
           status.textContent=id==='feedback-form'?'Thank you for sharing your feedback.':'Thank you for getting in touch. Your message has been sent.';
           form.reset();
